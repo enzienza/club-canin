@@ -17,3 +17,12 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+/.DS_Store
+/fonts/.DS_Store
+/fonts/Caviar_Dreams/.DS_Store
+/fonts/simple-line-icon/.DS_Store
+/img/.DS_Store
+/img/icon//.DS_Store
+/SASS/.DS_Store
+/js/.DS_Store
+/js/plugins/.DS_Store

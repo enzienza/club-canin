@@ -1,0 +1,102 @@
+// main: ../style.scss
+
+
+/*-----------------------------------------------------------------------------*/
+/* CAROUSEL */
+/*-----------------------------------------------------------------------------*/
+.carousel .slide{
+    max-heigth: 400px;
+}
+
+.carousel-inner > .carousel-item{
+    min-height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/* JUMBOTRON */
+/*-----------------------------------------------------------------------------*/
+.jumbotron{
+    text-align: center;
+    color: $colorLight;
+    position: relative;
+    top: 13rem;
+    font-weight: 300;
+    h1{
+        font-size: 4rem;
+        line-height: 2;
+        letter-spacing: 5px;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+/*------------------------------------------------------------------------------*/
+/* MEDIUM */
+/*------------------------------------------------------------------------------*/
+@include responsive(M){
+    .jumbotron{
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            margin: auto 4rem;
+            line-height: 2;
+            font-size: medium;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(S){
+    .carousel-inner > .carousel-item{
+        min-height: 500px;
+    }
+    .jumbotron{
+        top: 11rem;
+        h1{
+            line-height: 1;
+            font-size: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 3rem;
+        }
+        p{
+            margin: auto 2rem;
+            font-size: medium;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* EXTRA SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(XS){
+    .carousel-inner > .carousel-item{
+        min-height: 500px;
+    }
+
+    .jumbotron{
+        top: 9rem;
+        h1{
+            font-size: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 4rem;
+            line-height: 1;
+        }
+        p{
+            margin-left: 2rem;
+            margin-right: 2rem;
+            font-size: large;
+        }
+    }
+}

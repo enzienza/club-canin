@@ -1,0 +1,59 @@
+// main: ../_mixins.scss
+
+/*------------------------------------------------------------------------------*/
+/* BACKGROUND */
+/*------------------------------------------------------------------------------*/
+
+
+// Image de Background (simple) ------------------------------------------------
+@mixin bg-img($img_url){
+  background: url($img_url);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+// Effet Paralax ---------------------------------------------------------------
+@mixin bg-paralax {
+  background: url($img_url);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// Paralax and Degrader --------------------------------------------------------
+@mixin bg-paralax-degrader($img_url){
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                url($img_url) no-repeat fixed;
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                url($img_url) no-repeat fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                url($img_url) no-repeat fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+// Opaciter --------------------------------------------------------------------
+@mixin filter-opacite($opacite) {
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, $opacite), rgba(255, 255, 255,$opacite));
+    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, $opacite), rgba(255, 255, 255,$opacite));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, $opacite), rgba(255, 255, 255,$opacite));
+}
+
+
+// Dégrader radial -------------------------------------------------------------
+@mixin bg-radial-gradient {
+    background: -webkit-radial-gradient(circle, rgb(255, 255, 255), rgba(251, 221, 152, 1));
+    background: -o-radial-gradient(circle, rgb(255, 255, 255), rgba(251, 221, 152, 1));
+    background: radial-gradient(circle, rgb(255, 255, 255), rgba(251, 221, 152, 1));
+}
+
+
+// Dégrader linéaire -----------------------------------------------------------
+@mixin bg-linear-gradient {
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+}

@@ -1,0 +1,67 @@
+// main: ../style.scss
+
+
+/*-----------------------------------------------------------------------------*/
+/* background de section */
+/*-----------------------------------------------------------------------------*/
+/* --- bouton --- */
+.btn{
+    width: auto;
+    line-height: 2;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.btn-primary{
+    background: #B47A4B;
+    border-color: #B47A4B;
+    color: #FAFAFA;
+}
+.btn-primary:hover{
+    background: #90511e;
+    border-color: #90511e;
+    color: #FAFAFA;
+}
+.btn-outline-primary{
+    color: #B47A4B;
+    border: 2px solid #B47A4B;
+}
+.btn-outline-primary:hover {
+    color: #FAFAFA;
+    background: #90511e;
+    border-color: #90511e;
+}
+.btn-left{
+    text-align: right;
+}
+.btn-right{
+    text-align: left;
+}
+.btn-center{
+    text-align: center;
+}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+/* MEDIUM */
+/*------------------------------------------------------------------------------*/
+@include responsive(M){
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(S){
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* EXTRA SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(XS){
+
+}

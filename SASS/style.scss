@@ -1,0 +1,37 @@
+/*!
+Theme Name: Projet Canin
+Theme URI: http://www.le-chien-de-robermont.com
+Author: Enza Lombardo
+Author URI: www.enzalombardo.be
+Description: Le thème WordPress pour Le club canin "Le chien de Robermont"
+copyright : 2019 © Enza Lombardo
+Version: 1.2
+*/
+
+// import typography by google font -----------------
+//@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto');
+
+
+// VENDOR ----------------------------------------------------------------------
+@import "vendor/bootstrap";
+
+// HELPER / abstracts ----------------------------------------------------------
+@import "helper/variables";
+@import "helper/mixins";
+
+// BASE ------------------------------------------------------------------------
+//@import "base/reset";
+@import "base/general";
+@import 'base/fonts';
+//@import "base/animated";
+
+// MODULES ---------------------------------------------------------------------
+//@import "modules/carousel";
+@import 'modules/bg-section';
+@import 'modules/buttons';
+
+// LAYOUT ----------------------------------------------------------------------
+@import "layout/footer";
+
+// PAGES -----------------------------------------------------------------------
+@import "pages/homepage";

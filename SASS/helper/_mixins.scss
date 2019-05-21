@@ -1,0 +1,36 @@
+// main: ../style.scss
+
+
+
+@import 'mixins/backgrounds';
+@import 'mixins/boxes';
+@import 'mixins/transitions';
+@import 'mixins/keyframes';
+@import 'mixins/flexbox';
+
+
+/*------------------------------------------------------------------------------*/
+/* MEDIA QUERIES */
+/*------------------------------------------------------------------------------*/
+@mixin responsive($breakpoint){
+    @if $breakpoint == XS {
+        @media only screen and (min-width: $XS) and (max-width: calc(#{$S} - 1px) ){
+            @content;
+        }
+    }
+    @else if $breakpoint == S{
+        @media only screen and (min-width: $S) and (max-width: calc(#{$M} - 1px)){
+            @content;
+        }
+    }
+    @else if $breakpoint == M{
+        @media only screen and (min-width: $M) and (max-width: calc(#{$L} - 1px) ){
+            @content;
+        }
+    }
+    @else if $breakpoint == L{
+        @media only screen and (min-width: $L) and (max-width: 1200px){
+            @content;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+// main: ../style.scss
+
+
+/*-----------------------------------------------------------------------------*/
+/* background de section */
+/*-----------------------------------------------------------------------------*/
+/* droite */
+.bg-clair{
+    background-color: #FAFAFA;
+    color:#222;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.bg-paw-left{
+    background: url('../img/paw-left.png') no-repeat left;
+    background-size: contain;
+    height: 103vh;
+}
+/* gauche */
+.bg-fonce{
+    background-color: #222;
+    color: #FAFAFA;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.bg-paw-right{
+    background: url('../img/paw-right.png') no-repeat right;
+    background-size: contain;
+    height: 100vh;
+}
+.bg-light{
+    background: #B47A4B !important;
+}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+/* MEDIUM */
+/*------------------------------------------------------------------------------*/
+@include responsive(M){
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(S){
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* EXTRA SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(XS){
+
+}

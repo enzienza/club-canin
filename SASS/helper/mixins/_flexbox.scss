@@ -1,0 +1,38 @@
+// main: ../_mixins.scss
+
+
+
+// display-flex ----------------------------------------------------------------
+@mixin flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// justify-content -------------------------------------------------------------
+@mixin justify-content($x){
+    -webkit-box-pack: ($x);
+       -ms-flex-pack: ($x);
+     justify-content: ($x);
+}
+
+//align-item -------------------------------------------------------------------
+@mixin align-items($x){
+    -webkit-box-align: ($x);
+       -ms-flex-align: ($x);
+          align-items: ($x);
+}
+
+// display-grid ----------------------------------------------------------------
+@mixin display-grid {
+    display: -ms-grid;
+      display: grid;
+}
+
+// flex-flow -------------------------------------------------------------------
+@mixin flex-flow {
+     -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+}
