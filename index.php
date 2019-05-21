@@ -7,6 +7,9 @@
     <h1>Hello Word</h1>
 </section>
 
+
+    <?php require get_template_directory() . '/templates/section-contact.php' ?>
+
 </main>
 <!-- END : MAIN -->
 

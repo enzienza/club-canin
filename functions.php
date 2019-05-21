@@ -6,7 +6,7 @@ Description: Les functions créer pour le fonctionnement du theme wp
 Author: Enza Lombardo
 Author URI: www.enzalombardo.be
 copyright : 2019 © Enza Lombardo
-Version: 1.2
+Version: 2.0
 */
 
 /* ----------------------------------------------------- */
@@ -97,3 +97,21 @@ function fb_remove_version() {
 } // END -> fb_remove_version
 
 add_filter('the_generator', 'fb_remove_version');
+
+/* ---------------------------------------------------- */
+/* ----------------    Customize WP    ---------------- */
+/* ---------------------------------------------------- */
+//require get_template_directory() .'/functions/custom-admin.php';
+//require get_template_directory() .'/functions/custom-dashboard.php';
+
+
+/* ---------------------------------------------------- */
+/* ----------------    Settings API    ---------------- */
+/* ---------------------------------------------------- */
+require get_template_directory().'/functions/page/info-general.php';
+
+/* ---------------------------------------------------- */
+/* --------------    Custom Post Type    -------------- */
+/* ---------------------------------------------------- */
+
+// require get_template_directory(). '/functions/cpt/sercive-carte.php';

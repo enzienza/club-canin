@@ -5,7 +5,7 @@ Author: Enza Lombardo
 Author URI: www.enzalombardo.be
 Description: Le thème WordPress pour Le club canin "Le chien de Robermont"
 copyright : 2019 © Enza Lombardo
-Version: 1.2
+Version: 2.0
 */
 
 // import typography by google font -----------------
@@ -29,6 +29,9 @@ Version: 1.2
 //@import "modules/carousel";
 @import 'modules/bg-section';
 @import 'modules/buttons';
+@import 'modules/icons';
+@import 'modules/iframe';
+@import 'modules/tables';
 
 // LAYOUT ----------------------------------------------------------------------
 @import "layout/footer";
