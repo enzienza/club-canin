@@ -6,8 +6,8 @@
 /*-----------------------------------------------------------------------------*/
 /* droite */
 .bg-clair{
-    background-color: #FAFAFA;
-    color:#222;
+    background-color: $color-light;
+    color:$color-dark;
     box-sizing: border-box;
     height: 100vh;
 }
@@ -18,8 +18,8 @@
 }
 /* gauche */
 .bg-fonce{
-    background-color: #222;
-    color: #FAFAFA;
+    background-color: $color-dark;
+    color: $color-light;
     box-sizing: border-box;
     height: 100vh;
 }
@@ -29,7 +29,7 @@
     height: 100vh;
 }
 .bg-light{
-    background: #B47A4B !important;
+    background: $color-primary-light !important;
 }
 
 

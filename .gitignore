@@ -22,7 +22,16 @@ wp-content/plugins/hello.php
 /fonts/Caviar_Dreams/.DS_Store
 /fonts/simple-line-icon/.DS_Store
 /img/.DS_Store
-/img/icon//.DS_Store
+/img/icon/.DS_Store
 /SASS/.DS_Store
+/SASS/base/.DS_Store
+/SASS/base/fonts/.DS_Store
+/SASS/helper/.DS_Store
+/SASS/helper/mixins/.DS_Store
+/SASS/layout/.DS_Store
+/SASS/modules/.DS_Store
+/SASS/pages/.DS_Store
+/SASS/vendor/.DS_Store
+/SASS/vendor/bootstrap/.DS_Store
 /js/.DS_Store
 /js/plugins/.DS_Store

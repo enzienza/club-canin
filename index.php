@@ -7,7 +7,6 @@
     <h1>Hello Word</h1>
 </section>
 
-
 </main>
 <!-- END : MAIN -->
 

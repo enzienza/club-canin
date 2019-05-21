@@ -1,0 +1,83 @@
+// main: ../style.scss
+
+
+/*------------------------------------------------------------------------------*/
+/* Resize Menu On Scroll */
+/*------------------------------------------------------------------------------*/
+
+
+
+.logo{
+    img{
+        width: 30%;
+        height: auto;
+    }
+}
+header{
+    &.large {
+        img {
+            width: 250px;
+        }
+        li {
+            margin-top: 52px;
+        }
+    }
+    &.small {
+        img {
+            width: 150px;
+        }
+        li {
+            margin-top: 17px;
+        }
+    }
+    transition: .7s all;
+    -moz-transition: .7s all;
+    -webkit-transition: .7s all;
+    -o-transition: .7s all;
+}
+
+
+.navbar {
+    background: $color-primary-light !important;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+    li {
+        margin-right: 30px;
+    }
+
+}
+
+nav, a, img, li {
+    transition: .7s all;
+    -moz-transition: .7s all;
+    -webkit-transition: .7s all;
+    -o-transition: .7s all;
+}
+
+/*------------------------------------------------------------------------------*/
+/* MEDIUM */
+/*------------------------------------------------------------------------------*/
+@include responsive(M) {
+
+}
+/*------------------------------------------------------------------------------*/
+/* SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(S) {
+
+}
+/*------------------------------------------------------------------------------*/
+/* EXTRA SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(XS) {
+
+}

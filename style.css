@@ -4651,6 +4651,49 @@ a.text-dark:hover, a.text-dark:focus {
 /*------------------------------------------------------------------------------*/
 html, body {
   font-family: "Caviar Dreams", sans-serif;
+  background-color: #FAFAFA;
+  color: #222;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.txt-color {
+  color: #B47A4B;
+}
+
+.strong-color {
+  color: #B47A4B;
+  font-weight: bold;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -5713,6 +5756,106 @@ html, body {
 /*------------------------------------------------------------------------------*/
 /* FOOTER */
 /*------------------------------------------------------------------------------*/
+footer {
+  background-color: #222;
+  color: #FAFAFA;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  line-height: 1.7;
+  border-top: 0.1px solid #FAFAFA;
+  font-size: small;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+}
+
+/*------------------------------------------------------------------------------*/
+/* MEDIUM */
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/* SMALL */
+/*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  .footer-bottom {
+    padding: 3% 20%;
+    line-height: 1.4;
+    font-size: .8rem;
+  }
+}
+
+/*------------------------------------------------------------------------------*/
+/* EXTRA SMALL */
+/*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
+  .footer-bottom {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    padding: 5%;
+  }
+}
+
+/*------------------------------------------------------------------------------*/
+/* Resize Menu On Scroll */
+/*------------------------------------------------------------------------------*/
+.logo img {
+  width: 30%;
+  height: auto;
+}
+
+header {
+  transition: .7s all;
+  -moz-transition: .7s all;
+  -webkit-transition: .7s all;
+  -o-transition: .7s all;
+}
+
+header.large img {
+  width: 250px;
+}
+
+header.large li {
+  margin-top: 52px;
+}
+
+header.small img {
+  width: 150px;
+}
+
+header.small li {
+  margin-top: 17px;
+}
+
+.navbar {
+  background: #B47A4B !important;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Caviar Dreams", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.navbar li {
+  margin-right: 30px;
+}
+
+nav, a, img, li {
+  transition: .7s all;
+  -moz-transition: .7s all;
+  -webkit-transition: .7s all;
+  -o-transition: .7s all;
+}
+
 /*------------------------------------------------------------------------------*/
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
@@ -5722,6 +5865,38 @@ html, body {
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
+/* --------------------------------------------- */
+/* --------------    SCROLLTOP    -------------- */
+/* --------------------------------------------- */
+.scrollTop {
+  padding: 5px 20px 10px 13px;
+  width: 40px;
+  height: 40px;
+}
+
+.scrollTop {
+  background: #90511e;
+  color: #FAFAFA;
+  position: fixed;
+  padding: 5px 20px 10px 13px;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.scrollTop .icons {
+  vertical-align: middle;
+}
+
+.scrollTop:hover {
+  text-decoration: none;
+}
+
 /*------------------------------------------------------------------------------*/
 /* PAGE ACCUEIL */
 /*------------------------------------------------------------------------------*/

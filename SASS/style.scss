@@ -32,6 +32,8 @@ Version: 1.2
 
 // LAYOUT ----------------------------------------------------------------------
 @import "layout/footer";
+@import 'layout/resize-menu-on-scroll';
+@import 'layout/scrollTop';
 
 // PAGES -----------------------------------------------------------------------
 @import "pages/homepage";
