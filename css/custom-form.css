@@ -1,0 +1,21 @@
+/*
+Name : Custom Form
+Author: Enza Lombardo
+Description: Feuille de style pour le dashboard
+Copyright: 2019 © Enza Lombardo
+Version: 2.0
+*/
+
+
+p.description{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2em;
+}
+
+
+.form-info-general h2{
+    font-size: 1.7em;
+    margin-top: 0.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid #ddd;
+}

@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row info">
                     <div class="col-lg-6 col-md-6 col-12 footer-left">
-                        <h1>Nous contacté</h1>
+                        <h1><?php echo get_option('location_titre'); ?></h1>
                         <table class="table-location">
                             <tbody>
                                 <tr>

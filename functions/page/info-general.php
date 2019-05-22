@@ -54,11 +54,10 @@ function theme_page_clubcanin(){
     ?>
     <h1 class="wp-heading-inline">Le chien de Robermont</h1>
     <div class="wrap">
-        <h2>Info Général</h2>
-        <p class="description"></p>
+        <p class="description">Les informations de notre club</p>
 
         <div class="">
-            <form class="" action="options.php" method="post" enctype="multipart/form-data">
+            <form class="form-info-general" action="options.php" method="post" enctype="multipart/form-data">
 
                 <?php settings_fields( 'group-info-general' );?>
                 <?php do_settings_sections( 'info-general' ); ?>

@@ -12,14 +12,34 @@ Version: 2.0
 /* ----------------------------------------------------------------------------- */
 // SECTION 1 : section_location --> Option 1 -- info-resto
 /* ----------------------------------------------------------------------------- */
-// LOCATION --------------------------------------------------------------------
+
+// TITRE SECTION ---------------------------------------------------------------
 add_settings_section(
-    'section_location',                                // ID
-    __('Coordonnée', 'section_location'),              // TITLE
-    'display_section_location',                        // CALLBACK
-    'info-general'
+    'section_location_titre',                                   // ID
+    __('', 'section_location_titre'),                           // TITLE
+    'display_section_location_titre',                           // CALLBACK
+    'info-general'                                                  // MENU PAGE SLUG
 );
 
+/* --- field --- */
+add_settings_field(
+    'location_titre',                                                   // ID
+    __('Titre de la section', 'section_location_titre'),        // LABEL
+    'field_location_titre',                                             // CALLBACK FUNCTION
+    'info-general',                                                 // MENU PAGE SLUG
+    'section_location_titre'                                    // SECTION ID
+); // end --> titre
+
+/* --- register --- */
+register_setting('group-info-general', 'location_titre');
+
+// LOCATION --------------------------------------------------------------------
+add_settings_section(
+    'section_location',                                     // ID
+    __('Nos coordonnées', 'section_location'),              // TITLE
+    'display_section_location',                             // CALLBACK
+    'info-general'                                          // MENU PAGE SLUG
+);
 
 /* --- field --- */
 add_settings_field(
