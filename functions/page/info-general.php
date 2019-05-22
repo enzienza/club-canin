@@ -74,11 +74,10 @@ function theme_page_horaire(){
     ?>
     <h1 class="wp-heading-inline">Le chien de Robermont</h1>
     <div class="wrap">
-        <h2>Horaire</h2>
-        <p class="description"></p>
+        <p class="description">Les informations de notre club</p>
 
         <div class="">
-            <form class="" action="options.php" method="post" enctype="multipart/form-data">
+            <form class="form-horaire" action="options.php" method="post" enctype="multipart/form-data">
 
                 <?php settings_fields( 'group-horaire' );?>
                 <?php do_settings_sections( 'horaire' ); ?>
@@ -105,7 +104,7 @@ function custom_settings_clubcanin(){
     require get_template_directory().'/functions/page/settings/info-general.php';
 
     // 2e NIVEAU -- HORAIRE ----------------------------------------------------
-    //require get_template_directory().'/functions/page/settings/horaire.php';
+    require get_template_directory().'/functions/page/settings/horaire.php';
 
 
 } // END ==> custom_settings_clubcanin
@@ -118,4 +117,4 @@ function custom_settings_clubcanin(){
 require get_template_directory().'/functions/page/view-form/info-general.php';
 
 // 2e NIVEAU -- HORAIRE --------------------------------------------------------
-//require get_template_directory().'/functions/page/view-form/horaire.php';
+require get_template_directory().'/functions/page/view-form/horaire.php';

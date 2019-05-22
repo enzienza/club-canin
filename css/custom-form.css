@@ -13,9 +13,32 @@ p.description{
 }
 
 
-.form-info-general h2{
+.form-info-general h2,
+.form-horaire h2{
     font-size: 1.7em;
     margin-top: 0.5em;
     padding-top: 1.5em;
     border-top: 1px solid #ddd;
+}
+
+.form-info-general th{
+    width: 160px;
+}
+
+.form-horaire th{
+    width: 130px;
+}
+
+.form-horaire input[type=checkbox]{
+    margin-left: -1em;
+    margin-right: .7em;
+}
+
+.form-horaire .open{
+    margin-right: .7em;
+}
+
+.form-horaire input[type=time]{
+    margin-left: .5em;
+    margin-right: .7em;
 }

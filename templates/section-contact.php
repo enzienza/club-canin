@@ -25,17 +25,94 @@
                         </table>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 footer-right">
-                        <h1>Nous sommes ouvert</h1>
+                        <h1><?php echo get_option('horaire_titre'); ?></h1>
                         <table class="table-horaire">
                             <tbody>
-                                <tr>
-                                    <th>Mercredi</th>
-                                    <td>17:30 - 21:00</td>
-                                </tr>
-                                <tr>
-                                    <th>Dimanche</th>
-                                    <td>09:00 - 12:30</td>
-                                </tr>
+
+                                <!-- lundi -->
+                                <?php if(checked(1, get_option('lundi_open'), false)) { ?>
+                                    <tr>
+                                        <th>Lundi</th>
+                                        <td>
+                                            <span><?php echo get_option('lundi_de') ?></span>
+                                            -
+                                            <span><?php echo get_option('lundi_a') ?></span>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+
+                                <!-- mardi -->
+                                <?php if(checked(1, get_option('mardi_open'), false)) { ?>
+                                    <tr>
+                                        <th>Mardi</th>
+                                        <td>
+                                            <span><?php echo get_option('mardi_de') ?></span>
+                                            -
+                                            <span><?php echo get_option('mardi_a') ?></span>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+
+                                <!-- mercredi -->
+                                <?php if(checked(1, get_option('mercredi_open'), false)) { ?>
+                                    <tr>
+                                        <th>Mercredi</th>
+                                        <td>
+                                            <span><?php echo get_option('mercredi_de') ?></span>
+                                            -
+                                            <span><?php echo get_option('mercredi_a') ?></span>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+
+                                <!-- jeudi -->
+                                <?php if(checked(1, get_option('jeudi_open'), false)) { ?>
+                                    <tr>
+                                        <th>Jeudi</th>
+                                        <td>
+                                            <span><?php echo get_option('jeudi_de') ?></span>
+                                            -
+                                            <span><?php echo get_option('jeudi_a') ?></span>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+
+                                <!-- vendredi -->
+                                <?php if(checked(1, get_option('vendredi_open'), false)) { ?>
+                                    <tr>
+                                        <th>Vendredi</th>
+                                        <td>
+                                            <span><?php echo get_option('vendredi_de') ?></span>
+                                            -
+                                            <span><?php echo get_option('vendredi_a') ?></span>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+
+                                <!-- samedi -->
+                                <?php if(checked(1, get_option('samedi_open'), false)) { ?>
+                                    <tr>
+                                        <th>Samedi</th>
+                                        <td>
+                                            <span><?php echo get_option('samedi_de') ?></span>
+                                            -
+                                            <span><?php echo get_option('samedi_a') ?></span>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+
+                                <!-- dimanche -->
+                                <?php if(checked(1, get_option('dimanche_open'), false)) { ?>
+                                    <tr>
+                                        <th>Dimanche</th>
+                                        <td>
+                                            <span><?php echo get_option('dimanche_de') ?></span>
+                                            -
+                                            <span><?php echo get_option('dimanche_a') ?></span>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+
                             </tbody>
                         </table>
                     </div>

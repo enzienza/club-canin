@@ -18,15 +18,15 @@ add_settings_section(
     'section_location_titre',                                   // ID
     __('', 'section_location_titre'),                           // TITLE
     'display_section_location_titre',                           // CALLBACK
-    'info-general'                                                  // MENU PAGE SLUG
+    'info-general'                                              // MENU PAGE SLUG
 );
 
 /* --- field --- */
 add_settings_field(
-    'location_titre',                                                   // ID
+    'location_titre',                                           // ID
     __('Titre de la section', 'section_location_titre'),        // LABEL
-    'field_location_titre',                                             // CALLBACK FUNCTION
-    'info-general',                                                 // MENU PAGE SLUG
+    'field_location_titre',                                     // CALLBACK FUNCTION
+    'info-general',                                             // MENU PAGE SLUG
     'section_location_titre'                                    // SECTION ID
 ); // end --> titre
 
@@ -35,10 +35,10 @@ register_setting('group-info-general', 'location_titre');
 
 // LOCATION --------------------------------------------------------------------
 add_settings_section(
-    'section_location',                                     // ID
-    __('Nos coordonnées', 'section_location'),              // TITLE
-    'display_section_location',                             // CALLBACK
-    'info-general'                                          // MENU PAGE SLUG
+    'section_location',                                  // ID
+    __('Nos coordonnées', 'section_location'),           // TITLE
+    'display_section_location',                          // CALLBACK
+    'info-general'                                       // MENU PAGE SLUG
 );
 
 /* --- field --- */
@@ -59,17 +59,17 @@ add_settings_field(
 ); // end --> adresse
 
 add_settings_field(
-    'info_mail',                                       // ID
-    __('Email', 'section_location'),                // LABEL
-    'field_info_mail',                                 // CALLBACK FUNCTION
+    'info_mail',                                        // ID
+    __('Email', 'section_location'),                    // LABEL
+    'field_info_mail',                                  // CALLBACK FUNCTION
     'info-general',                                     // MENU PAGE SLUG
     'section_location'                                  // SECTION ID
 ); // end --> adresse
 
 add_settings_field(
-    'info_googlemap',                                       // ID
-    __('URL Google Map', 'section_location'),                // LABEL
-    'field_info_googlemap',                                 // CALLBACK FUNCTION
+    'info_googlemap',                                   // ID
+    __('URL Google Map', 'section_location'),           // LABEL
+    'field_info_googlemap',                             // CALLBACK FUNCTION
     'info-general',                                     // MENU PAGE SLUG
     'section_location'                                  // SECTION ID
 ); // end --> adresse
