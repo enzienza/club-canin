@@ -1,0 +1,74 @@
+// main: ../style.scss
+
+
+/*-----------------------------------------------------------------------------*/
+/* NEWSLETTER  */
+/*-----------------------------------------------------------------------------*/
+#section-newsletter{
+    height: 48vh;
+
+    .bg-silhouette{
+        background: URL('img/silhouette-humain.png')no-repeat left,
+                    URL('img/silhouette-dog.png')no-repeat right;
+        height: 50vh;
+        background-size: 190px;
+    }
+
+    .text{
+        &-line-1{
+            font-size: 26px;
+            letter-spacing: 2px;
+            margin-top: 15%;
+            margin-bottom: 3%;
+        }
+        &-line-2{
+            font-size: 30px;
+            letter-spacing: 2px;
+            margin-bottom: 6%;
+        }
+    }
+
+    .form{
+        &-mail{
+            width: 100%;
+            padding: 5px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 4%;
+        }
+        &-bouton{
+            width: 100%;
+            padding: 5px;
+            border: inherit;
+            font-size: 20px;
+            color: $color-light;
+            background: $color-primary-light;
+        }
+    }
+}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+/* MEDIUM */
+/*------------------------------------------------------------------------------*/
+@include responsive(M){
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(S){
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* EXTRA SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(XS){
+
+}

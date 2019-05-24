@@ -2,36 +2,44 @@
 
 
 /*-----------------------------------------------------------------------------*/
-/* background de section */
+/* cardGallery */
 /*-----------------------------------------------------------------------------*/
-/* droite */
-.bg-clair{
-    background-color: $color-light;
-    color:$color-dark;
-    box-sizing: border-box;
-    height: 100vh;
-}
-.bg-paw-left{
-    background: url('img/paw-left.png') no-repeat left;
-    background-size: contain;
-    height: 103vh;
-}
-/* gauche */
-.bg-fonce{
-    background-color: $color-dark;
-    color: $color-light;
-    box-sizing: border-box;
-    height: 100vh;
-}
-.bg-paw-right{
-    background: url('img/paw-right.png') no-repeat right;
-    background-size: contain;
-    height: 100vh;
-}
-.bg-light{
-    background: $color-primary-light !important;
-}
 
+.cardGallery{
+    padding: 3%;
+    height: 255px;
+    max-height: 255px;
+    @include shadow-gallery;
+
+    &:active, &:hover .cardActivity:focus{
+        @include hover-shadow-gallery;
+    }
+    img{
+        width: 100%;
+        height: 23vh;
+    }
+    .card-img-top{
+        height: 158px;
+    }
+
+    .card-body{
+        padding: 0;
+    }
+    .card-title{
+        background: rgba(180,122,75,0.70);
+        color: $color-light;
+        font-size: 21px;
+        width: 100%;
+        text-align: center;
+        line-height: 2;
+        margin-bottom: 7%;
+        position: relative;
+    }
+    .lien-gallery{
+        color: $color-primary-light;
+        font-weight: lighter;
+    }
+}
 
 
 

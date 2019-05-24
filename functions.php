@@ -114,4 +114,4 @@ require get_template_directory().'/functions/page/info-general.php';
 /* --------------    Custom Post Type    -------------- */
 /* ---------------------------------------------------- */
 
-// require get_template_directory(). '/functions/cpt/sercive-carte.php';
+require get_template_directory(). '/functions/cpt/galeries.php';
