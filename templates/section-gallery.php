@@ -8,7 +8,9 @@
                         <strong class="strong-color">partagé</strong>
                     </p>
                 </div>
-            </div>
+            </div><!-- /.row .justify-content-center -->
+
+
             <!-- debut cardGallery -->
             <div class="row">
                 <?php
@@ -40,20 +42,22 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div><!-- /.item-gallery -->
                 <!-- fin : item cardGallery -->
                 <?php endwhile; endif;  wp_reset_postdata(); ?>
             </div>
             <!-- fin cardGallery -->
-            <!-- debut -> bouton -->
+
+
+            <!-- BOUTON -->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-12 btn-center">
                     <a href="http://localhost:8888/projet_2019/projet-canin/galerie/" class="btn btn-outline-primary">
                         Tout nos bon moment
                     </a>
                 </div>
-            </div>
-            <!-- fin -> bouton -->
-        </div>
-    </div>
-</section>
+            </div><!-- /.row .justify-content-center -->
+
+        </div><!-- /.container -->
+    </div><!-- /.container-fluid .bg-paw-left -->
+</section><!-- /#section-gallery .bg-clair -->

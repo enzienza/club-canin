@@ -11,7 +11,8 @@
                         N’hésite plus et <strong class="strong-color">abonne-toi</strong> à notre newsletter.
                     </p>
                 </div>
-            </div>
+            </div><!-- /.row .justify-content-center -->
+
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-8 col-12">
                     <form id="form-newsletter" action="index.html" method="post" class="row">
@@ -23,7 +24,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </div><!-- /.row .justify-content-center -->
+        </div><!-- /.container .bg-silhouette -->
+    </div><!-- /.container-fluid -->
+</section><!-- /#section-newsletter -->
