@@ -76,7 +76,27 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
-
+    #section-slide{
+        padding-top: 11% !important;
+        height: 90vh !important;
+    }
+    #section-slide .justify-content-center{
+        padding: 11% 10% !important;
+    }
+    #section-slide .box-left, .box-right{
+        height: 70vh !important;
+    }
+    #section-slide .intro {
+        padding: 15% 0 13%;
+        font-size: 20px;
+    }
+    #section-slide .accroche{
+        font-size: 26px;
+        padding-bottom: 8%;
+    }
+    #section-slide .btn{
+        width: 100%;
+    }
 
 }
 

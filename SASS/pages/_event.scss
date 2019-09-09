@@ -72,12 +72,75 @@
 /*------------------------------------------------------------------------------*/
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
-@include responsive(M) {}
+@include responsive(M) {
+    /* --- SECTION-EVENT --- */
+    #section-event{
+        height: 110vh !important;
+    }
+    #section-event .bg-paw-right{
+        padding-top: 8% !important;
+        height: 73vh;
+    }
+    #section-event .titre{
+        font-size: 37px;
+        text-align: center;
+    }
+    #section-event .date-event, #archive-event .date-event{
+        height: 26vh;
+        width: 22%;
+    }
+    #section-event img, #archive-event img{
+        height: 26vh;
+        width: 100%;
+    }
+    #section-event .annee, #archive-event .annee{
+        font-size: small;
+    }
+    #section-event .btn{
+        margin: 3% 0;
+    }
+
+    /* --- ARCHIVE-EVENT --- */
+    #archive-event{
+        padding-top: 14% !important;
+    }
+    #archive-event .titre{
+        margin-bottom: 0;
+    }
+
+    /* --- SINGLE-EVENT --- */
+
+
+}
+
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
-@include responsive(S) {}
+@include responsive(S) {
+    /* --- SECTION-EVENT --- */
+
+
+    /* --- ARCHIVE-EVENT --- */
+
+
+    /* --- SINGLE-EVENT --- */
+
+
+}
+
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
-@include responsive(XS) {}
+@include responsive(XS) {
+    /* --- SECTION-EVENT --- */
+
+
+    /* --- ARCHIVE-EVENT --- */
+
+
+    /* --- SINGLE-EVENT --- */
+
+
+
+}

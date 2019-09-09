@@ -54,7 +54,12 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
-
+    #section-newsletter{
+        height: 65vh !important;
+    }
+    #section-newsletter .bg-silhouette{
+        height: 65vh !important;
+    }
 }
 
 
