@@ -108,7 +108,6 @@
         margin-bottom: 0;
     }
 
-    /* --- SINGLE-EVENT --- */
 }
 
 
@@ -116,6 +115,44 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
+    /* --- SECTION-EVENT --- */
+    #section-event{
+        height: 220vh !important;
+    }
+    #section-event .bg-paw-right{
+        height: 80vh !important;
+    }
+    #section-event .titre{
+        text-align: center;
+    }
+
+    /* --- ARCHIVE-EVENT --- */
+    #archive-event{
+        padding-top: 14% !important;
+    }
+    #archive-event .titre{
+        margin-bottom: 0;
+    }
+    #archive-event .titre{
+        font-size: 30px !important;
+        margin-bottom: 3% !important;
+        margin-top: 7% !important;
+    }
+
+
+    /* --- SINGLE-EVENT --- */
+    #single-event .event-desc{
+        padding-bottom: 7% !important;
+    }
+    .card-info-event{
+        margin-bottom: 11%;
+        margin-top: 0;
+    }
+    #single-event .titre{
+        font-size: 30px !important;
+        margin-bottom: 3% !important;
+        margin-top: 2% !important;
+    }
 
 }
 

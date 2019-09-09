@@ -145,6 +145,36 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
+    /* --- cardActivity --- */
+    .cardActivity{
+        height: 60vh !important;
+    }
+    .cardActivity.is-expanded .cardActivity__expander{
+        max-height: 70vh !important;
+        min-height: 55vh !important;
+    }
+
+    /* --- cardEvent --- */
+    .cardEvent .card-img-top{
+        height: 38vh !important;
+    }
+    .cardEvent img{
+        height: 38vh !important;
+    }
+    .cardEvent .date-event{
+        height: 38vh !important;
+    }
+    .cardEvent .annee{
+        font-size: small !important;
+    }
+
+    /* --- cardGallery ---  */
+    .cardGallery .card-img-top{
+        height: 34vh !important;
+    }
+    .cardGallery img{
+        height: 43vh !important;
+    }
 
 }
 

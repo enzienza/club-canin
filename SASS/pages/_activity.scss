@@ -61,7 +61,14 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
-
+    #section-activity{
+        height: 190vh !important;
+    }
+    #section-activity .bg-paw-left{
+        height: 84vh !important;
+        margin-top: 0 !important;
+    }
+    
 }
 
 /*------------------------------------------------------------------------------*/

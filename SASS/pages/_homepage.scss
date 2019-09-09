@@ -104,7 +104,42 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
+    #section-slide{
+        height: 97vh !important;
+        padding-top: 12% !important;
+    }
+    .box-left, .box-right{
+        height: 81vh !important;
+    }
+    .intro {
+        padding-top: 20% !important;
+        padding-bottom: 15% !important;
+        font-size: 21px !important;
+    }
+    .accroche{
+        font-size: 23px !important;
+        padding: 0 7% !important;
+    }
+    .bouton{
+        margin-top: 15%;
+    }
+    #section-slide .btn{
+        width: 100%;
+        font-size: smaller;
+    }
 
+    #section-contact{
+        height: 93vh !important;
+    }
+    .info h1{
+        font-style: 27px !important;
+    }
+    #section-contact .table{
+        font-size: medium !important;
+    }
+    .footer-right .table{
+        width: 100% !important;
+    }
 }
 
 /*------------------------------------------------------------------------------*/

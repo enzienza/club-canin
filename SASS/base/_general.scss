@@ -59,7 +59,11 @@ ul{
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
-
+    .titre{
+        font-size: 23px !important;
+        margin-top: 8% !important;
+        margin-bottom: 0 !important;
+    }
 }
 
 

@@ -131,7 +131,40 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
+    /* --- SECTION-GALLERY --- */
+    #section-gallery {
+        height: 120vh !important;
+    }
+    #section-gallery .bg-paw-left{
+        height: 80vh !important;
+    }
+    #section-gallery .titre{
+        margin-bottom: 4% !important;
+    }
+    .item-gallery{
+        padding-bottom: 30px;
+    }
 
+    /* --- ARCHIVE-GALLERY --- */
+    #archive-gallery .titre{
+        font-size: 30px !important;
+        margin-bottom: 3% !important;
+        margin-top: 7% !important;
+    }
+
+    /* --- SINGLE-GALLERY --- */
+    #single-gallery .gallery-desc{
+        padding-bottom: 7% !important;
+    }
+    .card-info-gallery{
+        margin-bottom: 11%;
+        margin-top: 0;
+    }
+    #single-gallery .titre{
+        font-size: 30px !important;
+        margin-bottom: 3% !important;
+        margin-top: 2% !important;
+    }
 }
 
 

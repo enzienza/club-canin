@@ -59,7 +59,13 @@
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
-
+    .btn-center .btn{
+        width: 60% !important;
+        margin: 5% 0 !important;
+    }
+    .btn{
+        margin: 3% 0;
+    }
 }
 
 
