@@ -1,0 +1,83 @@
+// main: ../style.scss
+/*------------------------------------------------------------------------------*/
+/* SECTION-EVENT */
+/*------------------------------------------------------------------------------*/
+
+#section-event{
+    height: 100vh;
+}
+#section-event .bg-paw-right{
+    padding-top: 8%;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* ARCHIVE-EVENT */
+/*------------------------------------------------------------------------------*/
+#archive-event{
+    padding-top: 11%;
+}
+#archive-event .titre{
+    text-align: center;
+}
+
+#archive-event .row{
+    padding-bottom: 3%;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* SINGLE-EVENT */
+/*------------------------------------------------------------------------------*/
+#single-event .w-100 img{
+    width: 100% !important;
+    height: 90vh;
+}
+
+#single-event .titre{
+    color: #B47A4B;
+    font-family: 'Caviar Dreams Bold';
+}
+
+#single-event .event-desc{
+    text-align: justify;
+    padding-bottom: 10%;
+    padding-right: 5%;
+}
+
+
+#single-event .event-desc p{
+    line-height: 1.6;
+}
+.card-info-event{
+    background-color:inherit;
+    box-shadow: 0px 1px 2px 0px rgb(180, 122, 75);
+    margin-top: 6%;
+}
+.card-info-event .card-title{
+    font-size: larger;
+    color: #B47A4B;
+    font-family: 'Caviar Dreams Bold';
+}
+.card-info-event .list-group-item{
+    background-color: inherit;
+    border: none;
+}
+.card-info-event .icons{
+    padding-right: 2%;
+    vertical-align: middle;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* MEDIUM */
+/*------------------------------------------------------------------------------*/
+@include responsive(M) {}
+/*------------------------------------------------------------------------------*/
+/* SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(S) {}
+/*------------------------------------------------------------------------------*/
+/* EXTRA SMALL */
+/*------------------------------------------------------------------------------*/
+@include responsive(XS) {}

@@ -2,42 +2,27 @@
 
 
 /*------------------------------------------------------------------------------*/
-/* FOOTER */
+/* header */
 /*------------------------------------------------------------------------------*/
-footer{
-    background-color: $color-dark;
-    color: $color-light;
-}
-.footer-bottom{
-    text-align: center;
-    padding: 10px 0;
-    line-height: 1.7;
-    border-top: 0.1px solid $color-light;
-    font-size: small;
-    margin-bottom: 0;
 
+/* .navbar-toggler:not(:disabled):not(.disabled){
+    position: fixed;
+    float: right;
+    right: 4%;
+    top: 6%;
+} */
+
+.navbar-brand{
+    width: 43%;
 }
 
-.footer-left li{
-    padding: 2% 0;
-    font-size: 18px;
-}
-.footer-left .icons{
-    vertical-align: middle;
-    font-size: 20px;
-    padding-right: 8px;
-}
-.footer-right .table{
-    width: 65%;
-}
-.footer-left .table th, .footer-left .table td,
-.footer-right .table th, .footer-right .table td{
-    border: none;
+/* -- nav-bar active -- */
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active{
+    color: #67340B !important;
 }
 
-.footer-left .table th{
-    text-align: right;
-}
+
 
 
 /*------------------------------------------------------------------------------*/
@@ -52,11 +37,7 @@ footer{
 /* SMALL */
 /*------------------------------------------------------------------------------*/
 @include responsive(S){
-    .footer-bottom{
-        padding: 3% 20%;
-        line-height: 1.4;
-        font-size: .8rem;
-    }
+
 }
 
 
@@ -64,9 +45,5 @@ footer{
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
 @include responsive(XS){
-    .footer-bottom{
-        font-size: 0.6rem;
-        letter-spacing: 2px;
-        padding: 5%;
-    }
+
 }

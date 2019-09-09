@@ -41,6 +41,93 @@
     }
 }
 
+/*-----------------------------------------------------------------------------*/
+/* cardEvent */
+/*-----------------------------------------------------------------------------*/
+.cardEvent{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border: none;
+    -webkit-box-shadow: 0 0 4px 0 rgba(255,255,255, 0.14),
+    0 3px 4px 0 rgba(255,255,255, 0.12),
+    0 1px 5px 0 rgba(255,255,255, 0.2);
+    -o-box-shadow: 0 0 4px 0 rgba(255,255,255, 0.14),
+    0 3px 4px 0 rgba(255,255,255, 0.12),
+    0 1px 5px 0 rgba(255,255,255, 0.2);
+    -moz-box-shadow: 0 0 4px 0 rgba(255,255,255, 0.14),
+    0 3px 4px 0 rgba(255,255,255, 0.12),
+    0 1px 5px 0 rgba(255,255,255, 0.2);
+    box-shadow: 0 0 4px 0 rgba(255,255,255, 0.14),
+    0 3px 4px 0 rgba(255,255,255, 0.12),
+    0 1px 5px 0 rgba(255,255,255, 0.2);
+
+
+}
+.cardEvent:hover{
+    -webkit-box-shadow: 0 8px 10px 1px rgba(255,255,255, 0.14),
+    0 3px 14px 3px rgba(255,255,255, 0.12),
+    0 4px 15px 0 rgba(255,255,255, 0.2);
+    -o-box-shadow: 0 8px 10px 1px rgba(255,255,255, 0.14),
+    0 3px 14px 3px rgba(255,255,255, 0.12),
+    0 4px 15px 0 rgba(255,255,255, 0.2);
+    -moz-box-shadow: 0 8px 10px 1px rgba(255,255,255, 0.14),
+    0 3px 14px 3px rgba(255,255,255, 0.12),
+    0 4px 15px 0 rgba(255,255,255, 0.2);
+    box-shadow: 0 8px 10px 1px rgba(255,255,255, 0.14),
+    0 3px 14px 3px rgba(255,255,255, 0.12),
+    0 4px 15px 0 rgba(255,255,255, 0.2);
+}
+.cardEvent img{
+    width: 100%;
+    height: 22.5vh;
+}
+
+.cardEvent .date-event{
+    background: rgba(180,122,75,0.70);
+    position: absolute;
+    width: 20%;
+    height: 22.5vh;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: .25rem 0 0 0;
+}
+.cardEvent .mois{
+    border-bottom: 0.5px solid #fafafa;
+    font-weight: lighter;
+    line-height: 3;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.cardEvent .jour{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2.2;
+}
+.cardEvent .annee{
+    border-top: 0.5px solid #fafafa;
+    font-weight: lighter;
+    line-height: 3;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.cardEvent .card-title{
+    color: #B47A4B;
+    font-size: 21px;
+}
+.cardEvent .card-text{
+    text-align: justify;
+    color: #222;
+}
+.cardEvent .lien-event{
+    color: #B47A4B;
+    font-weight: lighter;
+}
+
+
+
 
 
 /*------------------------------------------------------------------------------*/

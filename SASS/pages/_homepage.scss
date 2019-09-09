@@ -1,18 +1,57 @@
 // main: ../style.scss
 
 
+
 /*------------------------------------------------------------------------------*/
-/* SECTION-GALLERY */
+/* SECTION-SLIDE */
 /*------------------------------------------------------------------------------*/
-#section-gallery{
-    height: 83vh;
-    .bg-paw-left{
-        padding-top: 8%;
-        height: 85vh;
-    }
+#section-slide{
+    height: 100vh;
+    padding-top: 8%;
 }
 
+#section-slide .justify-content-center{
+    padding: 0 10%;
+}
 
+.box-left{
+    box-sizing: border-box;
+    height: 83vh;
+}
+.bg-slide{
+    padding: 0;
+    margin: 0;
+}
+.bg-slide img{
+    /* background: url("../img/slide-548634.jpg") no-repeat center; */
+    background-size: cover;
+    box-sizing: border-box;
+    height: 83vh;
+    width: 100%;
+}
+.intro{
+    text-align: justify;
+    padding: 27% 0 15%;
+    font-size: 31px;
+}
+.accroche{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.btn-left .btn, .btn-right .btn{
+    font-size: larger;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.bouton .btn{
+    letter-spacing: inherit;
+    width: 100%;
+}
 
 
 /*------------------------------------------------------------------------------*/

@@ -37,9 +37,13 @@ Version: 2.0
 
 // LAYOUT ----------------------------------------------------------------------
 @import 'layout/footer';
+@import 'layout/header';
 @import 'layout/main';
 @import 'layout/resize-menu-on-scroll';
 @import 'layout/scrollTop';
 
 // PAGES -----------------------------------------------------------------------
 @import 'pages/homepage';
+@import 'pages/gallery';
+@import 'pages/event';
+@import 'pages/activity';
