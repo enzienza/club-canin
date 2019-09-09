@@ -6120,6 +6120,15 @@ ul {
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  #section-activity .bg-paw-left,
+  #section-gallery .bg-paw-left,
+  #section-event .bg-paw-right,
+  #section-newsletter .bg-silhouette {
+    background: inherit !important;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
@@ -7113,6 +7122,31 @@ ul {
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  .box-left, .box-right {
+    height: 78vh !important;
+  }
+  .box-left {
+    position: absolute !important;
+    background-color: rgba(34, 34, 34, 0.6) !important;
+  }
+  .bg-slide {
+    z-index: -1;
+  }
+  #section-slide .justify-content-center {
+    padding: 0 5% !important;
+  }
+  .intro {
+    padding: 12% 0 8% !important;
+  }
+  .bouton {
+    margin-top: 5% !important;
+  }
+  #section-slide .btn {
+    font-size: large;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
@@ -7367,6 +7401,31 @@ ul {
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  /* --- cardActivity --- */
+  .cardActivity.is-expanded .cardActivity__expander {
+    padding-top: 11% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  .cardActivity-txt {
+    text-align: justify !important;
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .cardActivity-info {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
@@ -7477,6 +7536,12 @@ ul {
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  #section-newsletter {
+    height: 76vh !important;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
@@ -7646,6 +7711,15 @@ footer {
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  #header li {
+    width: 100%;
+    text-align: center;
+    line-height: 4;
+    margin-top: 0 !important;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
@@ -7903,6 +7977,15 @@ nav, a, img, li {
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  #section-contact {
+    height: 150vh !important;
+  }
+  .info h1 {
+    padding: 5% 0 !important;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/
@@ -8070,6 +8153,9 @@ nav, a, img, li {
 /*------------------------------------------------------------------------------*/
 @media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
   /* --- SECTION-GALLERY --- */
+  #section-gallery {
+    height: 305vh !important;
+  }
   /* --- ARCHIVE-GALLERY --- */
   /* --- SINGLE-GALLERY --- */
 }
@@ -8239,8 +8325,9 @@ nav, a, img, li {
 /*------------------------------------------------------------------------------*/
 @media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
   /* --- SECTION-EVENT --- */
-  /* --- ARCHIVE-EVENT --- */
-  /* --- SINGLE-EVENT --- */
+  #section-event {
+    height: 305vh !important;
+  }
 }
 
 /*------------------------------------------------------------------------------*/
@@ -8326,6 +8413,13 @@ nav, a, img, li {
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+  #section-activity {
+    height: 305vh !important;
+    margin-top: 0 !important;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* EXTRA SMALL */
 /*------------------------------------------------------------------------------*/

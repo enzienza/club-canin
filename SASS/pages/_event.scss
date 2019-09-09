@@ -162,13 +162,9 @@
 /*------------------------------------------------------------------------------*/
 @include responsive(S) {
     /* --- SECTION-EVENT --- */
-
-
-    /* --- ARCHIVE-EVENT --- */
-
-
-    /* --- SINGLE-EVENT --- */
-
+    #section-event{
+        height: 305vh !important;
+    }
 
 }
 
