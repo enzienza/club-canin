@@ -8,36 +8,55 @@ footer{
     background-color: $color-dark;
     color: $color-light;
 }
-.footer-bottom{
-    text-align: center;
-    padding: 10px 0;
-    line-height: 1.7;
-    border-top: 0.1px solid $color-light;
-    font-size: small;
-    margin-bottom: 0;
+.footer{
 
+    // footer-bottom --------------------------
+    &-bottom{
+        text-align: center;
+        padding: 10px 0;
+        line-height: 1.7;
+        border-top: 0.1px solid $color-light;
+        font-size: small;
+        margin-bottom: 0;
+
+    }
+
+    // footer-left ----------------------------
+    &-left{
+        li{
+            padding: 2% 0;
+            font-size: 18px;
+        }
+
+        .icons{
+            vertical-align: middle;
+            font-size: 20px;
+            padding-right: 8px;
+        }
+
+        .table{
+            th, td{
+                border: none;
+            }
+
+            th{
+                text-align: right;
+            }
+        }
+    }
+
+    // footer-right ----------------------------
+    &-right{
+        .table{
+            width: 65%;
+
+            th, td{
+                border: none;
+            }
+        }
+    }
 }
 
-.footer-left li{
-    padding: 2% 0;
-    font-size: 18px;
-}
-.footer-left .icons{
-    vertical-align: middle;
-    font-size: 20px;
-    padding-right: 8px;
-}
-.footer-right .table{
-    width: 65%;
-}
-.footer-left .table th, .footer-left .table td,
-.footer-right .table th, .footer-right .table td{
-    border: none;
-}
-
-.footer-left .table th{
-    text-align: right;
-}
 
 
 /*------------------------------------------------------------------------------*/
@@ -55,6 +74,9 @@ footer{
 @include responsive(M){
     .footer-left .table{
         width: 70%;
+    }
+    .footer-right .table{
+        width: 100% !important;
     }
 }
 

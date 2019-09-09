@@ -10,37 +10,47 @@
     line-height: 2;
     margin-top: 10%;
     margin-bottom: 10%;
+
+    // btn-left -----------------------------
+    &-left{
+        text-align: right;
+    }
+
+    // btn-rigbt ---------------------------
+    &-right{
+        text-align: left;
+    }
+
+    // btn-center --------------------------
+    &-center{
+        text-align: center;
+        font-size: x-large;
+        letter-spacing: 2px;
+        width: 50%;
+    }
 }
+
 .btn-primary{
     background: $color-primary-light;
     border-color: $color-primary-light;
     color: $color-light;
+
+    &:hover{
+        background: $color-primary;
+        border-color: $color-primary;
+        color: $color-light;
+    }
 }
-.btn-primary:hover{
-    background: $color-primary;
-    border-color: $color-primary;
-    color: $color-light;
-}
+
 .btn-outline-primary{
     color: $color-primary-light;
     border: 2px solid $color-primary-light;
-}
-.btn-outline-primary:hover {
-    color: $color-light;
-    background: $color-primary;
-    border-color: $color-primary;
-}
-.btn-left{
-    text-align: right;
-}
-.btn-right{
-    text-align: left;
-}
-.btn-center{
-    text-align: center;
-    font-size: x-large;
-    letter-spacing: 2px;
-    width: 50%;
+
+    &:hover {
+        color: $color-light;
+        background: $color-primary;
+        border-color: $color-primary;
+    }
 }
 
 

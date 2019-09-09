@@ -8,11 +8,13 @@
 #section-slide{
     height: 100vh;
     padding-top: 8%;
+
+    .justify-content-center{
+        padding: 0 10%;
+    }
 }
 
-#section-slide .justify-content-center{
-    padding: 0 10%;
-}
+#section-slide
 
 .box-left{
     box-sizing: border-box;
@@ -21,14 +23,16 @@
 .bg-slide{
     padding: 0;
     margin: 0;
+
+    img{
+       /* background: url("../img/slide-548634.jpg") no-repeat center; */
+       background-size: cover;
+       box-sizing: border-box;
+       height: 83vh;
+       width: 100%;
+   }
 }
-.bg-slide img{
-    /* background: url("../img/slide-548634.jpg") no-repeat center; */
-    background-size: cover;
-    box-sizing: border-box;
-    height: 83vh;
-    width: 100%;
-}
+
 .intro{
     text-align: justify;
     padding: 27% 0 15%;
@@ -79,34 +83,42 @@
     #section-slide{
         padding-top: 11% !important;
         height: 90vh !important;
-    }
-    #section-slide .justify-content-center{
-        padding: 11% 10% !important;
-    }
-    #section-slide .box-left, .box-right{
-        height: 70vh !important;
-    }
-    #section-slide .intro {
-        padding: 15% 0 13%;
-        font-size: 20px;
-    }
-    #section-slide .accroche{
-        font-size: 26px;
-        padding-bottom: 8%;
-    }
-    #section-slide .btn{
-        width: 100%;
-    }
 
+        .justify-content-center{
+            padding: 11% 10% !important;
+        }
+
+        .box-left, .box-right{
+            height: 70vh !important;
+        }
+        .intro {
+            padding: 15% 0 13%;
+            font-size: 20px;
+        }
+        .accroche{
+            font-size: 26px;
+            padding-bottom: 8%;
+        }
+        .btn{
+            width: 100%;
+        }
+    }
 }
 
 /*------------------------------------------------------------------------------*/
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
+
+    /* --- section-slide --- */
     #section-slide{
         height: 97vh !important;
         padding-top: 12% !important;
+
+        .btn{
+            width: 100%;
+            font-size: smaller;
+        }
     }
     .box-left, .box-right{
         height: 81vh !important;
@@ -123,22 +135,18 @@
     .bouton{
         margin-top: 15%;
     }
-    #section-slide .btn{
-        width: 100%;
-        font-size: smaller;
-    }
 
+
+    /* --- section-contact --- */
     #section-contact{
         height: 93vh !important;
+
+        .table{
+            font-size: medium !important;
+        }
     }
     .info h1{
         font-style: 27px !important;
-    }
-    #section-contact .table{
-        font-size: medium !important;
-    }
-    .footer-right .table{
-        width: 100% !important;
     }
 }
 

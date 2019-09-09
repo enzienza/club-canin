@@ -16,7 +16,7 @@ a{
 
     &:hover{
         text-decoration: none;
-        color: #90511e;
+        color: $color-primary;
     }
 }
 
@@ -36,12 +36,15 @@ ul{
     margin-top: 2%;
 }
 
-.float-right{
-    float: right;
+.float{
+    &-right{
+        float: right;
+    }
+    &-left{
+        float: left;
+    }
 }
-.float-left{
-    float: left;
-}
+
 .clear-both{
     clear: both;
 }

@@ -56,10 +56,12 @@
 @include responsive(L){
     #section-newsletter{
         height: 65vh !important;
+
+        .bg-silhouette{
+            height: 65vh !important;
+        }
     }
-    #section-newsletter .bg-silhouette{
-        height: 65vh !important;
-    }
+
 }
 
 /*------------------------------------------------------------------------------*/
@@ -68,17 +70,22 @@
 @include responsive(M){
     #section-newsletter{
         height: 75vh !important;
+
+        .bg-silhouette{
+            background-size: 23vh !important;
+            height: 99vh !important;
+        }
     }
-    #section-newsletter .bg-silhouette{
-        background-size: 23vh !important;
-        height: 99vh !important;
-    }
-    .text-line-1{
-        font-size: 22px !important;
-        margin-bottom: 7% !important;
-    }
-    .text-line-2{
-        font-size: 28px !important;
+
+    .text{
+        &-line-1{
+            font-size: 22px !important;
+            margin-bottom: 7% !important;
+        }
+
+        &-line-2{
+            font-size: 28px !important;
+        }
     }
 }
 

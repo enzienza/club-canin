@@ -19,58 +19,65 @@
 /*------------------------------------------------------------------------------*/
 #archive-gallery{
     padding-top: 11%;
-}
-#archive-gallery .titre{
-    text-align: center;
+
+    .titre{
+        text-align: center;
+    }
+
+     .row{
+        padding-bottom: 3%;
+    }
 }
 
-#archive-gallery .row{
-    padding-bottom: 3%;
-}
 
 /*------------------------------------------------------------------------------*/
 /* ARCHIVE-GALLERY */
 /*------------------------------------------------------------------------------*/
 
-#single-gallery .w-100 img{
-    width: 100% !important;
-    height: 90vh;
+#single-gallery {
+    .w-100 img{
+        width: 100% !important;
+        height: 90vh;
+    }
+
+    .titre{
+       color: $color-primary-light;
+       font-family: 'Caviar Dreams Bold';
+   }
+
+   .gallery-desc{
+      text-align: justify;
+      padding-bottom: 10%;
+      padding-right: 5%;
+
+        .gallery{
+          padding-top: 5%;
+        }
+  }
 }
 
- #single-gallery .titre{
-    color: #B47A4B;
-    font-family: 'Caviar Dreams Bold';
-}
-
- #single-gallery .gallery-desc{
-    text-align: justify;
-    padding-bottom: 10%;
-    padding-right: 5%;
-}
-
-#single-gallery .gallery-desc .gallery{
-    padding-top: 5%;
-}
 
 .card-info-gallery{
     background-color:inherit;
     box-shadow: 0px 1px 2px 0px rgb(180, 122, 75);
     margin-top: 6%;
-}
-.card-info-gallery .card-title{
-    font-size: larger;
-    color: #B47A4B;
-    font-family: 'Caviar Dreams Bold';
-}
-.card-info-gallery .list-group-item{
-    background-color: inherit;
-    border: none;
-}
-.card-info-gallery .icons{
-    padding-right: 2%;
-    vertical-align: middle;
-}
 
+    .card-title{
+        font-size: larger;
+        color: $color-primary-light;
+        font-family: 'Caviar Dreams Bold';
+    }
+
+    .list-group-item{
+        background-color: inherit;
+        border: none;
+    }
+
+    .icons{
+        padding-right: 2%;
+        vertical-align: middle;
+    }
+}
 
 
 /*------------------------------------------------------------------------------*/
@@ -80,49 +87,46 @@
     /* --- SECTION-GALLERY --- */
     #section-gallery {
         height: 85vh !important;
-    }
-    #section-gallery .bg-paw-left{
-        margin-top: 1% !important;
-        height: 66vh !important;
-    }
-    #section-gallery .titre{
-        font-size: 36px;
-        text-align: center;
-        margin-top: 4%;
-    }
-    .cardGallery .card-img-top{
-        height: 122px !important;
-    }
-    .cardGallery img{
-        height: 25vh !important;
-    }
-    #section-gallery .btn{
-        margin: 5% 0;
-    }
 
+        .bg-paw-left{
+            margin-top: 1% !important;
+            height: 66vh !important;
+        }
+
+        .titre{
+            font-size: 36px;
+            text-align: center;
+            margin-top: 4%;
+        }
+
+        .btn{
+            margin: 5% 0;
+        }
+    }
 
     /* --- ARCHIVE-GALLERY --- */
 
-
     /* --- SINGLE-GALLERY --- */
-    #single-gallery .gallery{
-        margin-right: -15px;
-        margin-left: -15px;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        -o-flex-wrap: wrap;
-        flex-wrap: wrap;
+    #single-gallery {
+        .gallery{
+            margin-right: -15px;
+            margin-left: -15px;
+
+            @include flexbox;
+            @include flex-wrap;
+        }
+
+        .gallery-item{
+            max-width: 33.333333%;
+            margin: 10px 0;
+
+            @include flex(0 0 33.333333%);
+        }
     }
-    #single-gallery .gallery-item{
-        max-width: 33.333333%;
+
+    .card-info-gallery .list-group-item{
         margin: 10px 0;
-        -webkit-flex: 0 0 33.333333%;
-        -moz-flex: 0 0 33.333333%;
-        -ms-flex: 0 0 33.333333%;
-        -o-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
+        padding: 0;
     }
 
 }
@@ -134,13 +138,16 @@
     /* --- SECTION-GALLERY --- */
     #section-gallery {
         height: 120vh !important;
+
+        .bg-paw-left{
+            height: 80vh !important;
+        }
+
+        .titre{
+            margin-bottom: 4% !important;
+        }
     }
-    #section-gallery .bg-paw-left{
-        height: 80vh !important;
-    }
-    #section-gallery .titre{
-        margin-bottom: 4% !important;
-    }
+
     .item-gallery{
         padding-bottom: 30px;
     }
@@ -155,15 +162,17 @@
     /* --- SINGLE-GALLERY --- */
     #single-gallery .gallery-desc{
         padding-bottom: 7% !important;
+
+        .titre{
+            font-size: 30px !important;
+            margin-bottom: 3% !important;
+            margin-top: 2% !important;
+        }
     }
+
     .card-info-gallery{
         margin-bottom: 11%;
         margin-top: 0;
-    }
-    #single-gallery .titre{
-        font-size: 30px !important;
-        margin-bottom: 3% !important;
-        margin-top: 2% !important;
     }
 }
 
