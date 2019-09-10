@@ -115,3 +115,4 @@ require get_template_directory().'/functions/page/info-general.php';
 /* ---------------------------------------------------- */
 
 require get_template_directory(). '/functions/cpt/galeries.php';
+require get_template_directory(). '/functions/cpt/evenements.php';

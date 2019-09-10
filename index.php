@@ -10,7 +10,7 @@
     <?php //require get_template_directory() . '/templates/section-activity.php' ?>
 
     <!-- section : event -->
-    <?php //require get_template_directory() . '/templates/section-event.php' ?>
+    <?php require get_template_directory() . '/templates/section-event.php' ?>
 
     <!-- section : gallery -->
     <?php require get_template_directory() . '/templates/section-gallery.php' ?>
@@ -20,6 +20,7 @@
 
     <!-- section : contact -->
     <?php require get_template_directory() . '/templates/section-contact.php' ?>
+
 
 </main>
 <!-- END : MAIN -->

@@ -1,8 +1,8 @@
 <?php
 /* Template Name: galeries */
 ?>
-
 <?php get_header(); ?>
+
 <section id="archive-gallery" class="">
     <div class="container-fluid bg-paw-left">
         <div class="container">
