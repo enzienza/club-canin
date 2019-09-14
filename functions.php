@@ -109,6 +109,7 @@ require get_template_directory() .'/functions/custom-admin.php';
 /* ----------------    Settings API    ---------------- */
 /* ---------------------------------------------------- */
 require get_template_directory().'/functions/page/info-general.php';
+//require get_template_directory().'/functions/page/activity.php';
 
 /* ---------------------------------------------------- */
 /* --------------    Custom Post Type    -------------- */
@@ -116,3 +117,4 @@ require get_template_directory().'/functions/page/info-general.php';
 
 require get_template_directory(). '/functions/cpt/galeries.php';
 require get_template_directory(). '/functions/cpt/evenements.php';
+require get_template_directory(). '/functions/cpt/activity.php';

@@ -7,7 +7,7 @@
     <?php //require get_template_directory() . '/templates/section-slide.php' ?>
 
     <!-- section : activity -->
-    <?php //require get_template_directory() . '/templates/section-activity.php' ?>
+    <?php require get_template_directory() . '/templates/section-activity.php' ?>
 
     <!-- section : event -->
     <?php require get_template_directory() . '/templates/section-event.php' ?>
