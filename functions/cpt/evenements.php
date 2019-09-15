@@ -1,12 +1,12 @@
 <?php
 
 /*
-Name:   cpt-evenement
-Description: Custom Post Type pour gérer le service des evenements organisé par le club
+Name:   evenements
+Description: Custom Post Type pour gérer les evenements organisé par le club
 Author: Enza Lombardo
 Author URI: www.enzalombardo.be
 copyright : 2019 © Enza Lombardo
-Version: 1.2
+Version: 2.0
 */
 
 /*

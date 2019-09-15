@@ -16,7 +16,7 @@ Version: 2.0
 
 function custom_admin(){
     echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/css/admin-style.css" />';
-    echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/css/custom-form.css" />';
+    //echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/css/custom-form.css" />';
 }
 
 add_action('login_head','custom_admin');

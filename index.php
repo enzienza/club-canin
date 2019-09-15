@@ -4,7 +4,7 @@
 <main role="main">
 
     <!-- section : slide -->
-    <?php //require get_template_directory() . '/templates/section-slide.php' ?>
+    <?php require get_template_directory() . '/templates/section-cover.php' ?>
 
     <!-- section : activity -->
     <?php require get_template_directory() . '/templates/section-activity.php' ?>

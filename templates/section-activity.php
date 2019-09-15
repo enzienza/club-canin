@@ -1,4 +1,16 @@
-<!-- ===== DEBUT SECTION-ACTIVITY ===== -->
+<?php
+/*
+Name:   section-activity
+Description: Section de la page d'accueil dédiée aux 4 activités du club
+Author: Enza Lombardo
+Author URI: www.enzalombardo.be
+copyright : 2019 © Enza Lombardo
+Version: 2.0
+*/
+
+/* ---- SECTION 2 : ACTIVITY ---- */
+?>
+
 <section id="section-activity" class="bg-clair">
     <div class="container-fluid bg-paw-left">
         <div class="container">
@@ -31,35 +43,31 @@
                  ?>
                 <!-- debut item cardActivity -->
 
-                <div class="cardsActivity">
                     <div class="cardActivity [ is-collapsed ] ">
-                            <div class="cardActivity__inner [ js-expander ]">
-                                <?php the_post_thumbnail(); ?>
-                                <h1 class="cardActivity-title">
-                                    <?php the_title(); ?>
-                                </h1>
+                        <div class="cardActivity__inner [ js-expander ]">
+                            <?php the_post_thumbnail(); ?>
+                            <h1 class="cardActivity-title">
+                                <?php the_title(); ?>
+                            </h1>
+                        </div>
+                        <div class="cardActivity__expander">
+                            <span class="icons icon-close  [ js-collapser ]"></span>
+                            <div class="col-6 cardActivity-txt">
+                                <?php the_content(); ?>
                             </div>
-                            <div class="cardActivity__expander">
-                                <span class="icons icon-close  [ js-collapser ]"></span>
-                                <div class="col-6 cardActivity-txt">
-                                    <?php the_content(); ?>
-                                </div>
-                                <div class="col-3 cardActivity-info">
-                                    <p class="txt-icon"><span class="icons icon-calendar"></span></p>
-                                    <p><?php echo get_post_meta($post->ID, 'quand', true); ?></p>
-                                </div>
-                                <div class="col-3 cardActivity-info">
-                                    <p class="txt-icon"><span class="icons icon-clock"></span></p>
-                                    <p>
-                                        <?php echo get_post_meta($post->ID, 'heure_debut', true); ?> -
-                                        <?php echo get_post_meta($post->ID, 'heure_fin', true); ?>
-                                    </p>
-                                </div>
+                            <div class="col-3 cardActivity-info">
+                                <p class="txt-icon"><span class="icons icon-calendar"></span></p>
+                                <p><?php echo get_post_meta($post->ID, 'quand', true); ?></p>
+                            </div>
+                            <div class="col-3 cardActivity-info">
+                                <p class="txt-icon"><span class="icons icon-clock"></span></p>
+                                <p>
+                                    <?php echo get_post_meta($post->ID, 'heure_debut', true); ?> -
+                                    <?php echo get_post_meta($post->ID, 'heure_fin', true); ?>
+                                </p>
                             </div>
                         </div>
-                </div><!-- /.cards -->
-
-
+                    </div>
 
                 <!-- fin item cardActivity -->
                 <?php endwhile; endif;  wp_reset_postdata(); ?>
@@ -69,4 +77,3 @@
         </div><!-- /.container -->
     </div><!-- /.container-fluid .bg-paw-left -->
 </section><!-- /#section-activity .bg-clair -->
-<!-- ====== FIN SECTION-ACTIVITY ====== -->

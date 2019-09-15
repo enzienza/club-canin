@@ -1,4 +1,17 @@
-<!-- ===== DEBUT SECTION-CONTACT ===== -->
+<?php
+/*
+Name:   section-contact
+Description: Section de la page d'accueil dédiée aux informations de contact du club
+Author: Enza Lombardo
+Author URI: www.enzalombardo.be
+copyright : 2019 © Enza Lombardo
+Version: 2.0
+*/
+
+/* ---- SECTION 6 : CONTACT ---- */
+?>
+
+
 <section id="section-contact" class="bg-fonce">
     <div class="container-fluid map">
         <iframe src="<?php echo get_option('info_googlemap'); ?>"  frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -121,4 +134,3 @@
         </div><!-- /.row .info -->
     </div><!-- /.container -->
 </section><!-- /#section-contact .bg-fonce -->
-<!-- =====  FIN SECTION-CONTACT ===== -->

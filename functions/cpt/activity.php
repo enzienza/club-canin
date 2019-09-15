@@ -1,12 +1,12 @@
 <?php
 
 /*
-Name:   cpt-activite
-Description: Custom Post Type pour gérer les activites organisé par le club
+Name:   activity
+Description: Custom Post Type pour gérer les activités organisé par le club
 Author: Enza Lombardo
 Author URI: www.enzalombardo.be
 copyright : 2019 © Enza Lombardo
-Version: 1.2
+Version: 2.0
 */
 
 /*
@@ -50,8 +50,8 @@ function CPT_activites() {
         'capability_type'       => 'post',
         'has_archive'           => true,
         'hierarchical'          => false,
-        'menu_position'         => 8,
-        'menu_icon'             => 'dashicons-universal-access',
+        'menu_position'         => 7,
+        'menu_icon'             => 'dashicons-excerpt-view',
         'supports' => array(
             'title',          // avoir un titre
             'editor',         // avoir un éditeur

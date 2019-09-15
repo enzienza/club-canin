@@ -1,5 +1,16 @@
+<?php
+/*
+Name:   section-event
+Description: Section de la page d'accueil dédiée aux 3 dernière évènements du club
+Author: Enza Lombardo
+Author URI: www.enzalombardo.be
+copyright : 2019 © Enza Lombardo
+Version: 2.0
+*/
 
-<!-- ===== DEBUT SECTION-EVENT ===== -->
+/* ---- SECTION 3 : EVENT ---- */
+?>
+
 <section id="section-event" class="bg-fonce">
     <div class="container-fluid bg-paw-right">
         <div class="container">
@@ -76,4 +87,3 @@
         </div><!-- /.container -->
     </div><!-- /.container-fluid .bg-paw-right -->
 </section><!-- /#section-event .bg-fonce -->
-<!-- ===== FIN SECTION-EVENT ===== -->

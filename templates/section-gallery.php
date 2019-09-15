@@ -1,3 +1,16 @@
+<?php
+/*
+Name:   section-gallery
+Description: Section de la page d'accueil dédiée aux 4 dernière galeries photos du club
+Author: Enza Lombardo
+Author URI: www.enzalombardo.be
+copyright : 2019 © Enza Lombardo
+Version: 2.0
+*/
+
+/* ---- SECTION 4 : GALLERY ---- */
+?>
+
 <section id="section-gallery" class="bg-clair">
     <div class="container-fluid bg-paw-left">
         <div class="container">

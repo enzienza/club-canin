@@ -1,3 +1,16 @@
+<?php
+/*
+Name:   section-newsletter
+Description: Section de la page d'accueil dédiée à la newsletter du club
+Author: Enza Lombardo
+Author URI: www.enzalombardo.be
+copyright : 2019 © Enza Lombardo
+Version: 2.0
+*/
+
+/* ---- SECTION 5 : NEWSLETTER ---- */
+?>
+
 <section id="section-newsletter">
     <div class="container-fluid ">
         <div class="container bg-silhouette">

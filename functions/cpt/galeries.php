@@ -1,12 +1,12 @@
 <?php
 
 /*
-Name:   cpt-galerie
-Description: Custom Post Type pour gérer le service à la galerie
+Name:   galeries
+Description: Custom Post Type pour la galerie de photo du club canin
 Author: Enza Lombardo
 Author URI: www.enzalombardo.be
 copyright : 2019 © Enza Lombardo
-Version: 1.2
+Version: 2.0
 */
 
 /*

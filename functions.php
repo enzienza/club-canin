@@ -102,7 +102,7 @@ add_filter('the_generator', 'fb_remove_version');
 /* ----------------    Customize WP    ---------------- */
 /* ---------------------------------------------------- */
 require get_template_directory() .'/functions/custom-admin.php';
-//require get_template_directory() .'/functions/custom-dashboard.php';
+require get_template_directory() .'/functions/custom-dashboard.php';
 
 
 /* ---------------------------------------------------- */
@@ -114,7 +114,7 @@ require get_template_directory().'/functions/page/info-general.php';
 /* ---------------------------------------------------- */
 /* --------------    Custom Post Type    -------------- */
 /* ---------------------------------------------------- */
-
-require get_template_directory(). '/functions/cpt/galeries.php';
-require get_template_directory(). '/functions/cpt/evenements.php';
+require get_template_directory(). '/functions/cpt/covers.php';
 require get_template_directory(). '/functions/cpt/activity.php';
+require get_template_directory(). '/functions/cpt/evenements.php';
+require get_template_directory(). '/functions/cpt/galeries.php';
