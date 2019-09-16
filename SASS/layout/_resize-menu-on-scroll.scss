@@ -9,31 +9,38 @@
 
 .logo{
     img{
-        width: 30%;
-        height: auto;
+        //width: 30%;
+        //height: auto;
     }
 }
 header{
+    img {
+        max-width: 180px;
+        min-width: 180px;
+        width: 100%;
+    }
     &.large {
         img {
-            width: 250px;
+            max-width: 180px;
+            min-width: 180px;
+            width: 100%;
         }
         li {
-            margin-top: 52px;
+            /* margin-top: 52px; */
         }
     }
     &.small {
         img {
-            width: 150px;
+            max-width: 120px;
+            min-width: 120px;
+            width: 100%;
         }
         li {
-            margin-top: 17px;
+            /* margin-top: 17px; */
         }
     }
-    transition: .7s all;
-    -moz-transition: .7s all;
-    -webkit-transition: .7s all;
-    -o-transition: .7s all;
+
+    @include transition-bloc(.7s all);
 }
 
 
@@ -51,7 +58,7 @@ header{
         font-size: 1em;
     }
     li {
-        margin-right: 30px;
+        margin-right: 1.3rem;
     }
 
 }
@@ -64,20 +71,35 @@ nav, a, img, li {
 }
 
 /*------------------------------------------------------------------------------*/
-/* MEDIUM */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-@include responsive(M) {
+
+/* Large devices -------------------------------------------------------------*/
+@include large-device {
 
 }
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(S) {
+
+/* Medium devices ------------------------------------------------------------*/
+@include medium-device {
 
 }
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(XS) {
+
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+    
+}
+
+/* Small devices -------------------------------------------------------------*/
+@include small-device {
+
+}
+
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
+
+}
+
+/* Extra Small devices -------------------------------------------------------*/
+@include xsmall-device {
 
 }

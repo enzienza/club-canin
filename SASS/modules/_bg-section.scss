@@ -13,8 +13,10 @@
     height: 100%;
 }
 .bg-paw-left{
-    background: url('img/paw-left.png') no-repeat left;
+    background: url('img/paw-left.png') no-repeat;
+    background-position: left;
     background-size: cover;
+    background-attachment:fixed;
     max-height: 103vh;
     height: 100%;
 }
@@ -27,8 +29,10 @@
     height: 100%;
 }
 .bg-paw-right{
-    background: url('img/paw-right.png') no-repeat right;
+    background: url('img/paw-right.png') no-repeat;
+    background-position: right;
     background-size: cover;
+    background-attachment:fixed;
     max-height: 100vh;
     height: 100%;
 }
@@ -39,12 +43,45 @@
 
 
 
+
 /*------------------------------------------------------------------------------*/
-/* MEDIUM */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-@include responsive(M){
+
+/* Large devices -------------------------------------------------------------*/
+@include large-device {
+    .bg-paw-left{
+        min-height: 80vh;
+        max-height: 80vh;
+        height: 100%;
+    }
+}
+
+/* Medium devices ------------------------------------------------------------*/
+@include medium-device {
 
 }
+
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+
+}
+
+/* Small devices -------------------------------------------------------------*/
+@include small-device {
+
+}
+
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
+
+}
+
+/* Extra Small devices -------------------------------------------------------*/
+@include xsmall-device {
+
+}
+
 
 
 /*------------------------------------------------------------------------------*/

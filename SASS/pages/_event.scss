@@ -99,22 +99,42 @@
 
 
 /*------------------------------------------------------------------------------*/
-/* LARGE */
-/*------------------------------------------------------------------------------*/
-@include responsive(L) {
-    /* --- SECTION-EVENT --- */
+
+/* Large devices -------------------------------------------------------------*/
+@include large-device {
+    // SECTION-EVENT ---------------------------------
     #section-event{
-        height: 110vh !important;
+        min-height: 90vh;
+        max-height: 90vh;
+        height: 100%;
 
         .bg-paw-right{
-            padding-top: 8% !important;
-            height: 73vh;
+            padding-top: 3.5em;
+            max-height: 90vh;
+            min-height: 90vh;
+            height: 100%;
         }
 
         .titre{
-            font-size: 37px;
-            text-align: center;
+            font-size: 2.2em;
+            text-align: left;
+            margin-bottom: 1.5em;
         }
+
+        .btn{
+            margin: 1em 0;
+            background-color: $color-dark;
+            color: color-light-primary;
+
+            &:hover{
+                background-color: $color-primary;
+                color: $color-dark;
+            }
+        }
+    }
+
+    .cardEvent{
+        margin-bottom: 2em;
     }
 
     #section-event .date-event,
@@ -131,11 +151,9 @@
     #archive-event .annee{
         font-size: small;
     }
-    #section-event .btn{
-        margin: 3% 0;
-    }
 
-    /* --- ARCHIVE-EVENT --- */
+
+    //ARCHIVE-EVENT -------------------------------
     #archive-event{
         padding-top: 14% !important;
 
@@ -143,14 +161,11 @@
             margin-bottom: 0;
         }
     }
-
 }
 
 
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@include responsive(M){
+/* Medium devices ------------------------------------------------------------*/
+@include medium-device {
     /* --- SECTION-EVENT --- */
     #section-event{
         height: 220vh !important;
@@ -202,10 +217,13 @@
 }
 
 
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(S) {
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+
+}
+
+/* Small devices -------------------------------------------------------------*/
+@include small-device {
     /* --- SECTION-EVENT --- */
     #section-event{
         height: 305vh !important;
@@ -214,18 +232,12 @@
 }
 
 
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(XS) {
-    /* --- SECTION-EVENT --- */
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
 
+}
 
-    /* --- ARCHIVE-EVENT --- */
-
-
-    /* --- SINGLE-EVENT --- */
-
-
+/* Extra Small devices -------------------------------------------------------*/
+@include xsmall-device {
 
 }

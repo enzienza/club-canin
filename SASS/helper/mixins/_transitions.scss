@@ -16,7 +16,7 @@
 }
 
 /**/
-@mixin transition-card($x) {
+@mixin transition-bloc($x) {
     -webkit-transition: ($x);
        -moz-transition: ($x);
          -o-transition: ($x);

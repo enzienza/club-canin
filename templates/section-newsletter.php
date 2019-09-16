@@ -15,7 +15,7 @@ Version: 2.0
     <div class="container-fluid ">
         <div class="container bg-silhouette">
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-8 col-12">
+                <div class="offset-md-1 col-md-7 col-12">
                     <p class="text-line-1">
                         Tu souhaites <strong>recevoir</strong> par email tous
                         <strong class="strong-color">nos activités, nos événements, et autres.</strong>
@@ -27,12 +27,12 @@ Version: 2.0
             </div><!-- /.row .justify-content-center -->
 
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-8 col-12">
+                <div class="offset-md-1 col-md-7 col-12">
                     <form id="form-newsletter" action="index.html" method="post" class="row">
-                        <div class="col-lg-8 col-md-8 col-12">
+                        <div class="col-md-9 col-12">
                             <input type="email" name="mail" id="mail" placeholder="Votre adresse email" class="form-mail">
                         </div>
-                        <div class="col-lg-3 col-md-3 col-12">
+                        <div class="col-md-3 col-12">
                             <input type="submit" value="Envoyer" class="form-bouton">
                         </div>
                     </form>

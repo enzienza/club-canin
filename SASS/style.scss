@@ -37,7 +37,7 @@ Version: 2.0
 @import 'modules/card-flexbox';
 
 // RESPONSIVES -----------------------------------------------------------------
-@import 'responsives/1-large-desktops';
+//@import 'responsives/1-large-desktops';
 @import 'responsives/2-medium-tablets';
 @import 'responsives/3-mobile-layout';
 @import 'responsives/4-small-smartphone';
@@ -46,7 +46,7 @@ Version: 2.0
 // LAYOUT ----------------------------------------------------------------------
 @import 'layout/footer';
 @import 'layout/header';
-@import 'layout/main';
+//@import 'layout/main';
 @import 'layout/resize-menu-on-scroll';
 @import 'layout/scrollTop';
 

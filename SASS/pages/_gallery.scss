@@ -9,7 +9,12 @@
     height: 100%;
 
     .bg-paw-left{
-        padding-top: 7%;
+        padding-top: 2em;
+    }
+
+    .titre{
+        margin-top: 1em;
+        margin-bottom: 1.5em;
     }
 
     .btn{
@@ -24,7 +29,7 @@
 #archive-gallery{
     padding-top: 11%;
     padding-bottom: 5em;
-    
+
     .titre{
         text-align: center;
         margin-top: 1em;
@@ -92,26 +97,51 @@
 
 
 /*------------------------------------------------------------------------------*/
-/* LARGE */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-@include responsive(L){
-    /* --- SECTION-GALLERY --- */
+
+/* Large devices -------------------------------------------------------------*/
+@include large-device {
+    // SECTION-GALLERY ------------------------------
     #section-gallery {
-        height: 85vh !important;
+    min-height: 90vh;
+    max-height: 90vh;
+    height: 100%;
 
         .bg-paw-left{
-            margin-top: 1% !important;
-            height: 66vh !important;
+            padding-top: 1em;
+            max-height: 90vh;
+            min-height: 90vh;
+            height: 100%;
         }
 
         .titre{
             font-size: 36px;
             text-align: center;
-            margin-top: 4%;
+            margin-top: 1em;
+            background-color: $color-light;
         }
 
         .btn{
-            margin: 5% 0;
+            margin: 1em 0;
+            background-color: $color-light;
+            color: $color-primary-light;
+
+            &:hover{
+                background-color: $color-primary;
+                color: $color-light;
+            }
+        }
+    }
+
+    .cardGallery{
+        min-height: 335px;
+        max-height: 335px;
+        height: 100%;
+        margin-bottom: 2em;
+
+        .card-title{
+            bottom: 2.6em;
         }
     }
 
@@ -142,10 +172,8 @@
 
 }
 
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@include responsive(M){
+/* Medium devices ------------------------------------------------------------*/
+@include medium-device {
     /* --- SECTION-GALLERY --- */
     #section-gallery {
         height: 120vh !important;
@@ -189,39 +217,25 @@
 
 
 
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(S){
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+
+}
+
+/* Small devices -------------------------------------------------------------*/
+@include small-device {
     /* --- SECTION-GALLERY --- */
     #section-gallery{
         height: 305vh !important;
     }
+}
 
-    /* --- ARCHIVE-GALLERY --- */
-
-
-    /* --- SINGLE-GALLERY --- */
-
-
-
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
 
 }
 
-
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(XS){
-    /* --- SECTION-GALLERY --- */
-
-
-    /* --- ARCHIVE-GALLERY --- */
-
-
-    /* --- SINGLE-GALLERY --- */
-
-
-
+/* Extra Small devices -------------------------------------------------------*/
+@include xsmall-device {
 
 }

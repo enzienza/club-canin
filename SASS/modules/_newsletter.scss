@@ -39,7 +39,6 @@
             max-height: 40px;
             min-height: 40px;
             line-height: 40px;
-            margin-left: 4%;
         }
         &-bouton{
             width: 100%;
@@ -48,6 +47,7 @@
             font-size: 20px;
             color: $color-light;
             background: $color-primary-light;
+            margin-left: -30px;
         }
     }
 }
@@ -56,23 +56,27 @@
 
 
 /*------------------------------------------------------------------------------*/
-/* LARGE */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-@include responsive(L){
+
+/* Large devices -------------------------------------------------------------*/
+@include large-device {
     #section-newsletter{
-        height: 65vh !important;
+        min-height: 60vh;
+        max-height: 60vh;
+        height: 100%;
 
         .bg-silhouette{
-            height: 65vh !important;
+            min-height: 68vh;
+            max-height: 68vh;
+            height: 100%;
         }
     }
 
 }
 
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@include responsive(M){
+/* Medium devices ------------------------------------------------------------*/
+@include medium-device {
     #section-newsletter{
         height: 75vh !important;
 
@@ -95,19 +99,23 @@
 }
 
 
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(S){
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+
+}
+
+/* Small devices -------------------------------------------------------------*/
+@include small-device {
     #section-newsletter{
         height: 76vh !important;
     }
 }
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
 
+}
 
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(XS){
+/* Extra Small devices -------------------------------------------------------*/
+@include xsmall-device {
 
 }

@@ -1,20 +1,25 @@
 // main: ../style.scss
 
 /*------------------------------------------------------------------------------*/
-/* SECTION-EVENT */
+/* SECTION-ACTIVITY */
 /*------------------------------------------------------------------------------*/
 #section-activity{
     max-height: 100vh;
     height: 100%;
 
     .bg-paw-left{
-        padding-top: 7%;
+        padding-top: 4em;
     }
 
     .activiy-title{
         padding-bottom: 1%;
         text-align: justify;
         padding-top: 1em;
+    }
+
+    .titre{
+        font-size: 2em;
+        background-color: $color-light;
     }
 
     img{
@@ -24,7 +29,7 @@
         min-height: 192px;
         height: 100%;
 
-        @include transition-card(all .3s);
+        @include transition-bloc(all .3s);
     }
 
     .cardActivity-title{
@@ -32,12 +37,49 @@
         background: #b47a4b;
         font-size: 1em;
     }
-
-
 }
 
 .btn-center .btn{
     font-size: x-large;
     letter-spacing: 2px;
     width: 50%;
+}
+
+/*------------------------------------------------------------------------------*/
+/* RESPONSIVE - MEDIA QUERIES */
+/*------------------------------------------------------------------------------*/
+
+/* Large devices -------------------------------------------------------------*/
+@include large-device {
+    #section-activity{
+        .bg-paw-left{
+            padding-top: 3em;
+            padding-bottom: 3em;
+        }
+    }
+}
+
+/* Medium devices ------------------------------------------------------------*/
+@include medium-device {
+
+}
+
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+
+}
+
+/* Small devices -------------------------------------------------------------*/
+@include small-device {
+
+}
+
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
+
+}
+
+/* Extra Small devices -------------------------------------------------------*/
+@include xsmall-device {
+
 }

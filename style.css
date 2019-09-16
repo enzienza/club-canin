@@ -6049,6 +6049,24 @@ input[type="button"].btn-block {
 /* KEYFRAMES */
 /*------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
+/* Large devices (desktops, 992px and up) */
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/* Medium devices (tablets, 768px and up) */
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/* Mobile Layout: 767px */
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/* Small devices (landscape phones, 576px and up) */
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/* Wide Mobile Layout: 480px */
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/* Extra Small devices  */
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
 /* MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
@@ -7095,8 +7113,10 @@ ul {
 }
 
 .bg-paw-left {
-  background: url("img/paw-left.png") no-repeat left;
+  background: url("img/paw-left.png") no-repeat;
+  background-position: left;
   background-size: cover;
+  background-attachment: fixed;
   max-height: 103vh;
   height: 100%;
 }
@@ -7111,8 +7131,10 @@ ul {
 }
 
 .bg-paw-right {
-  background: url("img/paw-right.png") no-repeat right;
+  background: url("img/paw-right.png") no-repeat;
+  background-position: right;
   background-size: cover;
+  background-attachment: fixed;
   max-height: 100vh;
   height: 100%;
 }
@@ -7122,8 +7144,22 @@ ul {
 }
 
 /*------------------------------------------------------------------------------*/
-/* MEDIUM */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .bg-paw-left {
+    min-height: 80vh;
+    max-height: 80vh;
+    height: 100%;
+  }
+}
+
+/* Medium devices ------------------------------------------------------------*/
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
@@ -7319,8 +7355,8 @@ ul {
 .cardGallery {
   padding: 3%;
   height: 100%;
-  max-height: 250px;
-  min-height: 250px;
+  max-height: 340px;
+  min-height: 340px;
   -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.14);
   -ms-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.14);
@@ -7337,15 +7373,15 @@ ul {
 }
 
 .cardGallery .card-img-top {
-  max-height: 160px;
-  min-height: 160px;
+  max-height: 240px;
+  min-height: 240px;
   height: 100%;
 }
 
 .cardGallery .card-img-top img {
   width: 100%;
-  max-height: 23vh;
-  min-height: 23vh;
+  max-height: 250px;
+  min-height: 250px;
   height: 100%;
 }
 
@@ -7360,7 +7396,7 @@ ul {
   line-height: 2;
   margin-bottom: 7%;
   position: absolute;
-  bottom: 2.2em;
+  bottom: 2.5em;
 }
 
 .cardGallery .card-body {
@@ -7438,7 +7474,6 @@ ul {
   max-height: 40px;
   min-height: 40px;
   line-height: 40px;
-  margin-left: 4%;
 }
 
 #section-newsletter .form-bouton {
@@ -7448,24 +7483,28 @@ ul {
   font-size: 20px;
   color: #FAFAFA;
   background: #B47A4B;
+  margin-left: -30px;
 }
 
 /*------------------------------------------------------------------------------*/
-/* LARGE */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #section-newsletter {
-    height: 65vh !important;
+    min-height: 60vh;
+    max-height: 60vh;
+    height: 100%;
   }
   #section-newsletter .bg-silhouette {
-    height: 65vh !important;
+    min-height: 68vh;
+    max-height: 68vh;
+    height: 100%;
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+/* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
   #section-newsletter {
     height: 75vh !important;
   }
@@ -7482,18 +7521,16 @@ ul {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
   #section-newsletter {
     height: 76vh !important;
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /*-----------------------------------------------------------------------------*/
 /* table */
 /*-----------------------------------------------------------------------------*/
@@ -7748,150 +7785,6 @@ table th, table td {
 }
 
 /* fin -> CARD-OPEN */
-/* ---------------------------------------------- */
-/* --- Large devices (desktops, 992px and up) --- */
-/* ---------------------------------------------- */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* -----------------   GENERAL   ----------------- */
-  .btn {
-    margin: 3% 0;
-  }
-  /* ----------- NAV-PRINCIPAL ------------ */
-  .navbar-expand-lg .navbar-collapse {
-    width: 100%;
-  }
-  /* --------------   SECTION-SLIDE   -------------- */
-  /* box-left */
-  #section-slide .justify-content-center {
-    padding: 11% 10% !important;
-  }
-  #section-slide .box-left, .box-right {
-    height: 70vh !important;
-  }
-  #section-slide .intro {
-    padding: 15% 0 13%;
-    font-size: 20px;
-  }
-  #section-slide .accroche {
-    font-size: 26px;
-    padding-bottom: 8%;
-  }
-  #section-slide .btn {
-    width: 100%;
-  }
-  /* -------------   SECTION-ACTIVITY   ------------ */
-  #section-activity {
-    height: 90vh !important;
-  }
-  #section-activity .bg-paw-left {
-    padding-top: 6% !important;
-    height: 63vh;
-  }
-  #section-activity .titre {
-    font-size: 30px;
-    margin-top: 3%;
-    margin-bottom: 0;
-  }
-  #section-activity .cardActivity-title {
-    font-size: large;
-  }
-  #section-activity .activiy-title {
-    padding-bottom: 0%;
-    text-align: justify;
-  }
-  /* --------------   SECTION-EVENT   ------------- */
-  #section-event {
-    height: 110vh !important;
-  }
-  #section-event .bg-paw-right {
-    padding-top: 8% !important;
-    height: 73vh;
-  }
-  #section-event .titre {
-    font-size: 37px;
-    text-align: center;
-  }
-  #section-event .date-event, #archive-event .date-event {
-    height: 26vh;
-    width: 22%;
-  }
-  #section-event img, #archive-event img {
-    height: 26vh;
-    width: 100%;
-  }
-  #section-event .annee, #archive-event .annee {
-    font-size: small;
-  }
-  #section-event .btn {
-    margin: 3% 0;
-  }
-  /* -------------   SECTION-GALLERY   ------------- */
-  #section-gallery {
-    height: 85vh !important;
-  }
-  #section-gallery .bg-paw-left {
-    margin-top: 1% !important;
-    height: 66vh !important;
-  }
-  #section-gallery .titre {
-    font-size: 36px;
-    text-align: center;
-    margin-top: 4%;
-  }
-  .cardGallery .card-img-top {
-    height: 122px !important;
-  }
-  .cardGallery img {
-    height: 25vh !important;
-  }
-  #section-gallery .btn {
-    margin: 5% 0;
-  }
-  /* ---------------   ARCHIVE   ------------- */
-  #archive-event {
-    padding-top: 14% !important;
-  }
-  #archive-event .titre {
-    margin-bottom: 0;
-  }
-  /* --------------   SINGLE  ------------- */
-  #single-gallery .gallery {
-    margin-right: -15px;
-    margin-left: -15px;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  #single-gallery .gallery-item {
-    max-width: 33.333333%;
-    margin: 10px 0;
-    -webkit-flex: 0 0 33.333333%;
-    -moz-flex: 0 0 33.333333%;
-    -ms-flex: 0 0 33.333333%;
-    -o-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-  }
-  .card-info-event .list-group-item,
-  .card-info-gallery .list-group-item {
-    margin: 10px 0;
-    padding: 0;
-  }
-  /* -----------   SECTION-NEWSLETTER   ----------- */
-  #section-newsletter {
-    height: 65vh !important;
-  }
-  #section-newsletter .bg-silhouette {
-    height: 65vh !important;
-  }
-  /* -------------   SECTION-CONTACT   -------------*/
-  .footer-left .table {
-    width: 70%;
-  }
-}
-
 /* ---------------------------------------------- */
 /* --- Medium devices (tablets, 768px and up) --- */
 /* ---------------------------------------------- */
@@ -8370,10 +8263,6 @@ footer {
     right: 4%;
     top: 6%;
 } */
-.navbar-brand {
-  width: 43%;
-}
-
 /* -- nav-bar active -- */
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
@@ -8381,21 +8270,13 @@ footer {
 }
 
 /*------------------------------------------------------------------------------*/
-/* LARGE */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .navbar-expand-lg .navbar-collapse {
-    width: 100%;
-  }
-}
-
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+/* Large devices -------------------------------------------------------------*/
+/* Medium devices ------------------------------------------------------------*/
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
   #header li {
     width: 100%;
     text-align: center;
@@ -8404,50 +8285,43 @@ footer {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* MAIN */
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
 /* Resize Menu On Scroll */
 /*------------------------------------------------------------------------------*/
-.logo img {
-  width: 30%;
-  height: auto;
+header {
+  -webkit-transition: 0.7s all;
+  -moz-transition: 0.7s all;
+  -o-transition: 0.7s all;
+  -ms-transition: 0.7s all;
+  transition: 0.7s all;
 }
 
-header {
-  transition: .7s all;
-  -moz-transition: .7s all;
-  -webkit-transition: .7s all;
-  -o-transition: .7s all;
+header img {
+  max-width: 180px;
+  min-width: 180px;
+  width: 100%;
 }
 
 header.large img {
-  width: 250px;
+  max-width: 180px;
+  min-width: 180px;
+  width: 100%;
 }
 
 header.large li {
-  margin-top: 52px;
+  /* margin-top: 52px; */
 }
 
 header.small img {
-  width: 150px;
+  max-width: 120px;
+  min-width: 120px;
+  width: 100%;
 }
 
 header.small li {
-  margin-top: 17px;
+  /* margin-top: 17px; */
 }
 
 .navbar {
@@ -8467,7 +8341,7 @@ header.small li {
 }
 
 .navbar li {
-  margin-right: 30px;
+  margin-right: 1.3rem;
 }
 
 nav, a, img, li {
@@ -8478,14 +8352,14 @@ nav, a, img, li {
 }
 
 /*------------------------------------------------------------------------------*/
-/* MEDIUM */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
+/* Medium devices ------------------------------------------------------------*/
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /* --------------------------------------------- */
 /* --------------    SCROLLTOP    -------------- */
 /* --------------------------------------------- */
@@ -8589,19 +8463,16 @@ nav, a, img, li {
   padding-top: 3%;
 }
 
-/*------------------------------------------------------------------------------*/
-/* LARGE */
-/*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #section-slide {
-    padding-top: 11% !important;
-    height: 90vh !important;
+    padding-top: 9%;
+    max-height: 80vh;
+    min-height: 55vh;
+    height: 100%;
   }
   #section-slide .justify-content-center {
     padding: 11% 10% !important;
-  }
-  #section-slide .box-left, #section-slide .box-right {
-    height: 70vh !important;
   }
   #section-slide .intro {
     padding: 15% 0 13%;
@@ -8616,10 +8487,8 @@ nav, a, img, li {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+/* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
   /* --- section-slide --- */
   #section-slide {
     height: 97vh !important;
@@ -8656,10 +8525,8 @@ nav, a, img, li {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+/* Small devices -------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
   #section-contact {
     height: 150vh !important;
   }
@@ -8668,9 +8535,7 @@ nav, a, img, li {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
 /* SECTION-GALLERY */
 /*------------------------------------------------------------------------------*/
@@ -8680,7 +8545,12 @@ nav, a, img, li {
 }
 
 #section-gallery .bg-paw-left {
-  padding-top: 7%;
+  padding-top: 2em;
+}
+
+#section-gallery .titre {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
 #section-gallery .btn {
@@ -8751,24 +8621,44 @@ nav, a, img, li {
 }
 
 /*------------------------------------------------------------------------------*/
-/* LARGE */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* --- SECTION-GALLERY --- */
   #section-gallery {
-    height: 85vh !important;
+    min-height: 90vh;
+    max-height: 90vh;
+    height: 100%;
   }
   #section-gallery .bg-paw-left {
-    margin-top: 1% !important;
-    height: 66vh !important;
+    padding-top: 1em;
+    max-height: 90vh;
+    min-height: 90vh;
+    height: 100%;
   }
   #section-gallery .titre {
     font-size: 36px;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 1em;
+    background-color: #FAFAFA;
   }
   #section-gallery .btn {
-    margin: 5% 0;
+    margin: 1em 0;
+    background-color: #FAFAFA;
+    color: #B47A4B;
+  }
+  #section-gallery .btn:hover {
+    background-color: #90511e;
+    color: #FAFAFA;
+  }
+  .cardGallery {
+    min-height: 335px;
+    max-height: 335px;
+    height: 100%;
+    margin-bottom: 2em;
+  }
+  .cardGallery .card-title {
+    bottom: 2.6em;
   }
   /* --- ARCHIVE-GALLERY --- */
   /* --- SINGLE-GALLERY --- */
@@ -8799,10 +8689,8 @@ nav, a, img, li {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+/* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
   /* --- SECTION-GALLERY --- */
   #section-gallery {
     height: 120vh !important;
@@ -8837,27 +8725,17 @@ nav, a, img, li {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
   /* --- SECTION-GALLERY --- */
   #section-gallery {
     height: 305vh !important;
   }
-  /* --- ARCHIVE-GALLERY --- */
-  /* --- SINGLE-GALLERY --- */
 }
 
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
-  /* --- SECTION-GALLERY --- */
-  /* --- ARCHIVE-GALLERY --- */
-  /* --- SINGLE-GALLERY --- */
-}
-
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
 /* SECTION-EVENT */
 /*------------------------------------------------------------------------------*/
@@ -8947,36 +8825,50 @@ nav, a, img, li {
 }
 
 /*------------------------------------------------------------------------------*/
-/* LARGE */
-/*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* --- SECTION-EVENT --- */
   #section-event {
-    height: 110vh !important;
+    min-height: 90vh;
+    max-height: 90vh;
+    height: 100%;
   }
   #section-event .bg-paw-right {
-    padding-top: 8% !important;
-    height: 73vh;
+    padding-top: 3.5em;
+    max-height: 90vh;
+    min-height: 90vh;
+    height: 100%;
   }
   #section-event .titre {
-    font-size: 37px;
-    text-align: center;
+    font-size: 2.2em;
+    text-align: left;
+    margin-bottom: 1.5em;
   }
-  #section-event .date-event, #archive-event .date-event {
+  #section-event .btn {
+    margin: 1em 0;
+    background-color: #222;
+    color: color-light-primary;
+  }
+  #section-event .btn:hover {
+    background-color: #90511e;
+    color: #222;
+  }
+  .cardEvent {
+    margin-bottom: 2em;
+  }
+  #section-event .date-event,
+  #archive-event .date-event {
     height: 26vh;
     width: 22%;
   }
-  #section-event img, #archive-event img {
+  #section-event img,
+  #archive-event img {
     height: 26vh;
     width: 100%;
   }
-  #section-event .annee, #archive-event .annee {
+  #section-event .annee,
+  #archive-event .annee {
     font-size: small;
   }
-  #section-event .btn {
-    margin: 3% 0;
-  }
-  /* --- ARCHIVE-EVENT --- */
   #archive-event {
     padding-top: 14% !important;
   }
@@ -8985,10 +8877,8 @@ nav, a, img, li {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
+/* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
   /* --- SECTION-EVENT --- */
   #section-event {
     height: 220vh !important;
@@ -9028,27 +8918,19 @@ nav, a, img, li {
   }
 }
 
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
   /* --- SECTION-EVENT --- */
   #section-event {
     height: 305vh !important;
   }
 }
 
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 320px) and (max-width: calc(480px - 1px)) {
-  /* --- SECTION-EVENT --- */
-  /* --- ARCHIVE-EVENT --- */
-  /* --- SINGLE-EVENT --- */
-}
-
-/*------------------------------------------------------------------------------*/
-/* SECTION-EVENT */
+/* SECTION-ACTIVITY */
 /*------------------------------------------------------------------------------*/
 #section-activity {
   max-height: 100vh;
@@ -9056,13 +8938,18 @@ nav, a, img, li {
 }
 
 #section-activity .bg-paw-left {
-  padding-top: 7%;
+  padding-top: 4em;
 }
 
 #section-activity .activiy-title {
   padding-bottom: 1%;
   text-align: justify;
   padding-top: 1em;
+}
+
+#section-activity .titre {
+  font-size: 2em;
+  background-color: #FAFAFA;
 }
 
 #section-activity img {
@@ -9089,3 +8976,20 @@ nav, a, img, li {
   letter-spacing: 2px;
   width: 50%;
 }
+
+/*------------------------------------------------------------------------------*/
+/* RESPONSIVE - MEDIA QUERIES */
+/*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #section-activity .bg-paw-left {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+
+/* Medium devices ------------------------------------------------------------*/
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
