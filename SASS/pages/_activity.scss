@@ -61,12 +61,40 @@
 
 /* Medium devices ------------------------------------------------------------*/
 @include medium-device {
+    #section-activity{
+        min-height: 70vh !important;
+        max-height: 120vh !important;
+        height: auto !important;
 
+        .bg-paw-left{
+            background: inherit;
+            padding-top: 2em;
+        }
+
+        .activiy-title{
+            padding-top: 1em;
+            padding-bottom: .2em;
+        }
+
+        .titre{
+            font-size: 1.5em;
+            margin: .9em;
+        }
+
+        .cardActivity{
+            margin: 0 1.5em;
+        }
+    }
 }
 
 /* Mobile Layout -------------------------------------------------------------*/
 @include mobile-layout {
+    #section-activity{
+        min-height: 70vh;
+        max-height: 120vh;
+        height: auto;
 
+    }
 }
 
 /* Small devices -------------------------------------------------------------*/

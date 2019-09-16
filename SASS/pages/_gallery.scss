@@ -176,14 +176,21 @@
 @include medium-device {
     /* --- SECTION-GALLERY --- */
     #section-gallery {
-        height: 120vh !important;
+        max-height: 120vh;
+        min-height: 70vh;
+        height: auto;
 
         .bg-paw-left{
-            height: 80vh !important;
+            background: none;
+            background-position: none;
+            background-attachment: none;
+            padding-top: 2em;
         }
 
         .titre{
-            margin-bottom: 4% !important;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 1.3em;
         }
     }
 

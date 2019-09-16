@@ -6128,24 +6128,16 @@ ul {
 /*------------------------------------------------------------------------------*/
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
-  .titre {
-    font-size: 23px !important;
-    margin-top: 8% !important;
-    margin-bottom: 0 !important;
-  }
-}
-
 /*------------------------------------------------------------------------------*/
 /* SMALL */
 /*------------------------------------------------------------------------------*/
 @media only screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
-  #section-activity .bg-paw-left,
-  #section-gallery .bg-paw-left,
-  #section-event .bg-paw-right,
-  #section-newsletter .bg-silhouette {
-    background: inherit !important;
-  }
+  /* #section-activity .bg-paw-left,
+    #section-gallery .bg-paw-left,
+    #section-event .bg-paw-right,
+    #section-newsletter .bg-silhouette{
+        background: inherit !important;;
+    } */
 }
 
 /*------------------------------------------------------------------------------*/
@@ -7156,6 +7148,15 @@ ul {
 }
 
 /* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+  #section-activity .bg-paw-left,
+  #section-gallery .bg-paw-left,
+  #section-event .bg-paw-right,
+  #section-newsletter .bg-silhouette {
+    background: none !important;
+  }
+}
+
 /* Mobile Layout -------------------------------------------------------------*/
 /* Small devices -------------------------------------------------------------*/
 /* Wide Mobile Layout --------------------------------------------------------*/
@@ -7254,8 +7255,8 @@ ul {
 /*------------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: calc(992px - 1px)) {
   .btn-center .btn {
-    width: 60% !important;
-    margin: 5% 0 !important;
+    width: 60%;
+    margin: 5% 0;
   }
   .btn {
     margin: 3% 0;
@@ -7430,14 +7431,22 @@ ul {
 }
 
 /*------------------------------------------------------------------------------*/
-/* MEDIUM */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
+/* Large devices -------------------------------------------------------------*/
+/* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+  .map iframe {
+    min-height: 30vh;
+    max-height: 30vh;
+    height: 100%;
+  }
+}
+
+/* Mobile Layout -------------------------------------------------------------*/
+/* Small devices -------------------------------------------------------------*/
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
 /*-----------------------------------------------------------------------------*/
 /* NEWSLETTER  */
 /*-----------------------------------------------------------------------------*/
@@ -7506,18 +7515,26 @@ ul {
 /* Medium devices ------------------------------------------------------------*/
 @media only screen and (max-width: 768px) and (max-width: 991px) {
   #section-newsletter {
-    height: 75vh !important;
+    min-height: 30vh;
+    max-height: 30vh;
+    height: 100%;
   }
   #section-newsletter .bg-silhouette {
-    background-size: 23vh !important;
-    height: 99vh !important;
+    min-height: 30vh;
+    max-height: 30vh;
+    height: 100%;
   }
-  .text-line-1 {
-    font-size: 22px !important;
-    margin-bottom: 7% !important;
+  #section-newsletter .text-line-1 {
+    font-size: 1.4em;
+    margin: 1.5em;
+    margin-top: 1em;
   }
-  .text-line-2 {
-    font-size: 28px !important;
+  #section-newsletter .text-line-2 {
+    font-size: 1.6em;
+    margin: 1.5em;
+  }
+  #section-newsletter .form-mail {
+    margin-left: 2em;
   }
 }
 
@@ -7785,162 +7802,6 @@ table th, table td {
 }
 
 /* fin -> CARD-OPEN */
-/* ---------------------------------------------- */
-/* --- Medium devices (tablets, 768px and up) --- */
-/* ---------------------------------------------- */
-@media only screen and (max-width: 768px) and (max-width: 991px) {
-  /* -----------------   GENERAL   ----------------- */
-  .titre {
-    font-size: 23px !important;
-    margin-top: 8% !important;
-    margin-bottom: 0 !important;
-  }
-  .btn-center .btn {
-    width: 60% !important;
-    margin: 5% 0 !important;
-  }
-  .btn {
-    margin: 3% 0;
-  }
-  /* --------------   SECTION-SLIDE   -------------- */
-  /* box-left */
-  #section-slide {
-    height: 97vh !important;
-    padding-top: 12% !important;
-  }
-  .box-left, .box-right {
-    height: 81vh !important;
-  }
-  .intro {
-    padding-top: 20% !important;
-    padding-bottom: 15% !important;
-    font-size: 21px !important;
-  }
-  .accroche {
-    font-size: 23px !important;
-    padding: 0 7% !important;
-  }
-  .bouton {
-    margin-top: 15%;
-  }
-  #section-slide .btn {
-    width: 100%;
-    font-size: smaller;
-  }
-  /* -------------   SECTION-ACTIVITY   ------------ */
-  #section-activity {
-    height: 190vh !important;
-  }
-  #section-activity .bg-paw-left {
-    height: 84vh !important;
-    margin-top: 0 !important;
-  }
-  .cardActivity {
-    height: 60vh !important;
-  }
-  .cardActivity.is-expanded .cardActivity__expander {
-    max-height: 70vh !important;
-    min-height: 55vh !important;
-  }
-  /* --------------   SECTION-EVENT   ------------- */
-  #section-event {
-    height: 220vh !important;
-  }
-  #section-event .bg-paw-right {
-    height: 80vh !important;
-  }
-  #section-event .titre {
-    text-align: center;
-  }
-  .cardEvent .card-img-top {
-    height: 38vh !important;
-  }
-  .cardEvent img {
-    height: 38vh !important;
-  }
-  .cardEvent .date-event {
-    height: 38vh !important;
-  }
-  .cardEvent .annee {
-    font-size: small !important;
-  }
-  /* -------------   SECTION-GALLERY   -------------*/
-  #section-gallery {
-    height: 120vh !important;
-  }
-  #section-gallery .bg-paw-left {
-    height: 80vh !important;
-  }
-  #section-gallery .titre {
-    margin-bottom: 4% !important;
-  }
-  .item-gallery {
-    padding-bottom: 30px;
-  }
-  .cardGallery .card-img-top {
-    height: 34vh !important;
-  }
-  .cardGallery img {
-    height: 43vh !important;
-  }
-  /* ---------------   ARCHIVE   ------------- */
-  #archive-event {
-    padding-top: 14% !important;
-  }
-  #archive-event .titre {
-    margin-bottom: 0;
-  }
-  #archive-event .titre,
-  #archive-gallery .titre {
-    font-size: 30px !important;
-    margin-bottom: 3% !important;
-    margin-top: 7% !important;
-  }
-  /* --------------   SINGLE  ------------- */
-  #single-event .event-desc,
-  #single-gallery .gallery-desc {
-    padding-bottom: 7% !important;
-  }
-  .card-info-event, .card-info-gallery {
-    margin-bottom: 11%;
-    margin-top: 0;
-  }
-  #single-event .titre,
-  #single-gallery .titre {
-    font-size: 30px !important;
-    margin-bottom: 3% !important;
-    margin-top: 2% !important;
-  }
-  /* -----------   SECTION-NEWSLETTER   ----------- */
-  #section-newsletter {
-    height: 75vh !important;
-  }
-  #section-newsletter .bg-silhouette {
-    background-size: 23vh !important;
-    height: 99vh !important;
-  }
-  .text-line-1 {
-    font-size: 22px !important;
-    margin-bottom: 7% !important;
-  }
-  .text-line-2 {
-    font-size: 28px !important;
-  }
-  /* -------------   SECTION-CONTACT   ------------ */
-  #section-contact {
-    height: 93vh !important;
-  }
-  .info h1 {
-    font-style: 27px !important;
-  }
-  #section-contact .table {
-    font-size: medium !important;
-  }
-  .footer-right .table {
-    width: 100% !important;
-  }
-}
-
 /* ---------------------------------------------- */
 /* --- Medium devices (tablets, 768px and up) --- */
 /* ---------------------------------------------- */
@@ -8356,6 +8217,13 @@ nav, a, img, li {
 /*------------------------------------------------------------------------------*/
 /* Large devices -------------------------------------------------------------*/
 /* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+  .navbar li {
+    margin-right: 1em;
+    font-size: .9em;
+  }
+}
+
 /* Mobile Layout -------------------------------------------------------------*/
 /* Small devices -------------------------------------------------------------*/
 /* Wide Mobile Layout --------------------------------------------------------*/
@@ -8427,7 +8295,7 @@ nav, a, img, li {
 
 #section-slide .bouton .btn {
   letter-spacing: inherit;
-  width: 100%;
+  min-width: 100%;
 }
 
 #section-slide .bg-slide {
@@ -8448,7 +8316,9 @@ nav, a, img, li {
 /* SECTION-CONTACT */
 /*------------------------------------------------------------------------------*/
 #section-contact {
-  height: 90vh;
+  min-height: 90vh;
+  max-height: 90vh;
+  height: 100%;
 }
 
 #section-contact h1 {
@@ -8461,6 +8331,10 @@ nav, a, img, li {
   margin: 0;
   padding: 0;
   padding-top: 3%;
+}
+
+#section-contact .footer-left, #section-contact .footer-right {
+  padding-left: 6em;
 }
 
 /* Large devices -------------------------------------------------------------*/
@@ -8485,43 +8359,67 @@ nav, a, img, li {
   #section-slide .btn {
     width: 100%;
   }
+  #section-contact {
+    min-height: 85vh;
+    max-height: 85vh;
+    height: 100%;
+  }
+  #section-contact .footer-left, #section-contact .footer-right {
+    padding-left: 6em;
+  }
+  #section-contact h1 {
+    margin-top: 1.2em;
+  }
 }
 
 /* Medium devices ------------------------------------------------------------*/
 @media only screen and (max-width: 768px) and (max-width: 991px) {
-  /* --- section-slide --- */
   #section-slide {
-    height: 97vh !important;
-    padding-top: 12% !important;
+    padding-top: 4em;
+    min-height: 65vh;
+    max-height: 65vh;
+    height: 100%;
   }
-  #section-slide .btn {
-    width: 100%;
-    font-size: smaller;
+  #section-slide .box-left {
+    height: 100%;
+    min-height: 60vh;
+    max-height: 60vh;
   }
-  .box-left, .box-right {
-    height: 81vh !important;
+  #section-slide .intro {
+    font-size: 1.5em;
+    padding-top: 1.4em;
+    padding-bottom: 1.2em;
   }
-  .intro {
-    padding-top: 20% !important;
-    padding-bottom: 15% !important;
-    font-size: 21px !important;
+  #section-slide .accroche {
+    font-size: 2em;
+    padding-bottom: .1em;
+    line-height: normal;
   }
-  .accroche {
-    font-size: 23px !important;
-    padding: 0 7% !important;
+  #section-slide .bouton {
+    margin-top: 2em;
   }
-  .bouton {
-    margin-top: 15%;
+  #section-slide .bouton .btn {
+    min-width: 100%;
   }
-  /* --- section-contact --- */
+  #section-slide .bg-slide img {
+    min-height: 60vh;
+    max-height: 60vh;
+    height: 100%;
+  }
   #section-contact {
-    height: 93vh !important;
+    min-height: 60vh;
+    max-height: 70vh;
+    height: auto;
+  }
+  #section-contact .footer-left, #section-contact .footer-right {
+    padding-left: 4em;
+  }
+  #section-contact h1 {
+    font-size: 1.5em;
+    line-height: 2.1;
   }
   #section-contact .table {
     font-size: medium !important;
-  }
-  .info h1 {
-    font-style: 27px !important;
   }
 }
 
@@ -8693,13 +8591,20 @@ nav, a, img, li {
 @media only screen and (max-width: 768px) and (max-width: 991px) {
   /* --- SECTION-GALLERY --- */
   #section-gallery {
-    height: 120vh !important;
+    max-height: 120vh;
+    min-height: 70vh;
+    height: auto;
   }
   #section-gallery .bg-paw-left {
-    height: 80vh !important;
+    background: none;
+    background-position: none;
+    background-attachment: none;
+    padding-top: 2em;
   }
   #section-gallery .titre {
-    margin-bottom: 4% !important;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.3em;
   }
   .item-gallery {
     padding-bottom: 30px;
@@ -8828,20 +8733,20 @@ nav, a, img, li {
 /* Large devices -------------------------------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #section-event {
-    min-height: 90vh;
-    max-height: 90vh;
+    min-height: 100vh;
+    max-height: 100vh;
     height: 100%;
   }
   #section-event .bg-paw-right {
-    padding-top: 3.5em;
-    max-height: 90vh;
-    min-height: 90vh;
+    padding-top: 2em;
+    max-height: 100vh;
+    min-height: 100vh;
     height: 100%;
   }
   #section-event .titre {
     font-size: 2.2em;
     text-align: left;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.1em;
   }
   #section-event .btn {
     margin: 1em 0;
@@ -8881,13 +8786,37 @@ nav, a, img, li {
 @media only screen and (max-width: 768px) and (max-width: 991px) {
   /* --- SECTION-EVENT --- */
   #section-event {
-    height: 220vh !important;
+    max-height: 120vh;
+    min-height: 70vh;
+    height: auto;
   }
   #section-event .bg-paw-right {
-    height: 80vh !important;
+    background: inherit;
+    padding-top: 2em;
   }
   #section-event .titre {
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.3em;
+  }
+  #section-event .cardEvent {
+    margin-bottom: 2em;
+  }
+  #section-event .cardEvent .date-event {
+    max-height: 200px;
+    min-height: 200px;
+    height: 100%;
+  }
+  #section-event .cardEvent img {
+    max-height: 200px;
+    min-height: 200px;
+    height: 100%;
+    max-width: 330px;
+    min-width: 330px;
+    width: 100%;
+  }
+  #section-event .btn {
+    margin: 1em 0;
   }
   /* --- ARCHIVE-EVENT --- */
   #archive-event {
@@ -8989,7 +8918,38 @@ nav, a, img, li {
 }
 
 /* Medium devices ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+  #section-activity {
+    min-height: 70vh !important;
+    max-height: 120vh !important;
+    height: auto !important;
+  }
+  #section-activity .bg-paw-left {
+    background: inherit;
+    padding-top: 2em;
+  }
+  #section-activity .activiy-title {
+    padding-top: 1em;
+    padding-bottom: .2em;
+  }
+  #section-activity .titre {
+    font-size: 1.5em;
+    margin: .9em;
+  }
+  #section-activity .cardActivity {
+    margin: 0 1.5em;
+  }
+}
+
 /* Mobile Layout -------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  #section-activity {
+    min-height: 70vh;
+    max-height: 120vh;
+    height: auto;
+  }
+}
+
 /* Small devices -------------------------------------------------------------*/
 /* Wide Mobile Layout --------------------------------------------------------*/
 /* Extra Small devices -------------------------------------------------------*/

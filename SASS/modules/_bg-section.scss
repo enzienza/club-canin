@@ -60,6 +60,12 @@
 /* Medium devices ------------------------------------------------------------*/
 @include medium-device {
 
+    #section-activity .bg-paw-left,
+    #section-gallery .bg-paw-left,
+    #section-event .bg-paw-right,
+    #section-newsletter .bg-silhouette{
+        background: none !important;
+    }
 }
 
 /* Mobile Layout -------------------------------------------------------------*/

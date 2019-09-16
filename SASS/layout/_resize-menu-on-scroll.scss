@@ -81,12 +81,15 @@ nav, a, img, li {
 
 /* Medium devices ------------------------------------------------------------*/
 @include medium-device {
-
+    .navbar li{
+        margin-right: 1em;
+        font-size: .9em;
+    }
 }
 
 /* Mobile Layout -------------------------------------------------------------*/
 @include mobile-layout {
-    
+
 }
 
 /* Small devices -------------------------------------------------------------*/

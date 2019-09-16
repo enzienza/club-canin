@@ -168,14 +168,41 @@
 @include medium-device {
     /* --- SECTION-EVENT --- */
     #section-event{
-        height: 220vh !important;
+        max-height: 120vh;
+        min-height: 70vh;
+        height: auto;
 
         .bg-paw-right{
-            height: 80vh !important;
+            background: inherit;
+            padding-top: 2em;
         }
 
         .titre{
             text-align: center;
+            font-size: 2em;
+            margin-bottom: 1.3em;
+        }
+
+        .cardEvent{
+            margin-bottom: 2em;
+            .date-event{
+                max-height: 200px;
+                min-height: 200px;
+                height: 100%;
+            }
+
+            img{
+                max-height: 200px;
+                min-height: 200px;
+                height: 100%;
+                max-width: 330px;
+                min-width: 330px;
+                width: 100%;
+            }
+        }
+
+        .btn{
+            margin: 1em 0;
         }
     }
 

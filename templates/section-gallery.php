@@ -15,7 +15,7 @@ Version: 2.0
     <div class="container-fluid bg-paw-left">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="offset-3 col-md-9 col-12">
+                <div class="offset-lg-3 col-lg-9 col-12">
                     <p class="titre">
                         <strong class="strong-color">Moment sympa</strong> que nous avous
                         <strong class="strong-color">partagé</strong>

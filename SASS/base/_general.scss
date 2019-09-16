@@ -62,11 +62,7 @@ ul{
 /* MEDIUM */
 /*------------------------------------------------------------------------------*/
 @include responsive(M){
-    .titre{
-        font-size: 23px !important;
-        margin-top: 8% !important;
-        margin-bottom: 0 !important;
-    }
+
 }
 
 
@@ -74,12 +70,12 @@ ul{
 /* SMALL */
 /*------------------------------------------------------------------------------*/
 @include responsive(S){
-    #section-activity .bg-paw-left,
+    /* #section-activity .bg-paw-left,
     #section-gallery .bg-paw-left,
     #section-event .bg-paw-right,
     #section-newsletter .bg-silhouette{
         background: inherit !important;;
-    }
+    } */
 }
 
 

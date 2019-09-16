@@ -78,24 +78,35 @@
 /* Medium devices ------------------------------------------------------------*/
 @include medium-device {
     #section-newsletter{
-        height: 75vh !important;
+        min-height: 30vh;
+        max-height: 30vh;
+        height: 100%;
 
         .bg-silhouette{
-            background-size: 23vh !important;
-            height: 99vh !important;
+            min-height: 30vh;
+            max-height: 30vh;
+            height: 100%;
+        }
+        .text{
+            &-line-1{
+                font-size: 1.4em;
+                margin: 1.5em;
+                margin-top: 1em;
+            }
+
+            &-line-2{
+                font-size: 1.6em;
+                margin: 1.5em;
+            }
+        }
+
+        .form{
+            &-mail{
+                margin-left: 2em;
+            }
         }
     }
 
-    .text{
-        &-line-1{
-            font-size: 22px !important;
-            margin-bottom: 7% !important;
-        }
-
-        &-line-2{
-            font-size: 28px !important;
-        }
-    }
 }
 
 
