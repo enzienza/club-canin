@@ -9,24 +9,28 @@
     background-color: $color-light;
     color:$color-dark;
     box-sizing: border-box;
-    height: 100vh;
+    max-height: 100vh;
+    height: 100%;
 }
 .bg-paw-left{
     background: url('img/paw-left.png') no-repeat left;
-    background-size: contain;
-    height: 103vh;
+    background-size: cover;
+    max-height: 103vh;
+    height: 100%;
 }
 /* gauche */
 .bg-fonce{
     background-color: $color-dark;
     color: $color-light;
     box-sizing: border-box;
-    height: 100vh;
+    max-height: 100vh;
+    height: 100%;
 }
 .bg-paw-right{
     background: url('img/paw-right.png') no-repeat right;
-    background-size: contain;
-    height: 100vh;
+    background-size: cover;
+    max-height: 100vh;
+    height: 100%;
 }
 .bg-light{
     background: $color-primary-light !important;

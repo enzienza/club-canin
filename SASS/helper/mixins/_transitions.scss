@@ -14,3 +14,12 @@
          -o-transition: background-color .5s ease 0s;
             transition: background-color .5s ease 0s;
 }
+
+/**/
+@mixin transition-card($x) {
+    -webkit-transition: ($x);
+       -moz-transition: ($x);
+         -o-transition: ($x);
+        -ms-transition: ($x);
+            transition: ($x);
+}

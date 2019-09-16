@@ -15,7 +15,7 @@ Version: 2.0
     <div class="container-fluid bg-paw-right">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-9 col-md-8 col-12">
+                <div class="col-12">
                     <p class="titre">
                         Ne rate pas <strong class="strong-color">nos évenement</strong>
                     </p>

@@ -4,8 +4,8 @@
 /* cardEvent */
 /*-----------------------------------------------------------------------------*/
 .cardEvent{
-    margin-top: 6%;
-    margin-bottom: 6%;
+    //margin-top: 6%;
+    //margin-bottom: 6%;
     border: none;
     @include shadow-event;
 
@@ -13,17 +13,22 @@
         @include hover-shadow-event;
     }
 
-
     img{
         width: 100%;
-        height: 22.5vh;
+        max-height: 26vh;
+        min-height: 26vh;
+        height: 100%;
     }
 
     .date-event{
         background: rgba(180,122,75,0.70);
         position: absolute;
-        width: 20%;
-        height: 22.5vh;
+        max-height: 26vh;
+        min-height: 26vh;
+        height: 100%;
+        max-width: 22%;
+        min-width: 22%;
+        width: 100%;
         color: $color-light;
         text-align: center;
         padding-top: 15px;
@@ -33,30 +38,30 @@
     .mois{
         border-bottom: 0.5px solid $color-light;
         font-weight: lighter;
-        line-height: 3;
+        line-height: 2.5;
         margin-left: 15px;
         margin-right: 15px;
-        font-size: 16px;
+        font-size: 1em
     }
 
     .jour{
-        font-size: 30px;
+        font-size: 2em;
         font-weight: bold;
-        line-height: 2.2;
+        line-height: 2;
     }
 
     .annee{
         border-top: 0.5px solid $color-light;
         font-weight: lighter;
-        line-height: 3;
+        line-height: 2.5;
         margin-left: 15px;
         margin-right: 15px;
-        font-size: 16px;
+        font-size: 1em;
     }
 
     .card-title{
         color: $color-primary-light;
-        font-size: 21px;
+        font-size: 1.6em;
     }
 
     .card-text{
@@ -68,103 +73,4 @@
         color: $color-primary-light;
         font-weight: lighter;
     }
-}
-
-
-
-
-/*------------------------------------------------------------------------------*/
-/* LARGE */
-/*------------------------------------------------------------------------------*/
-@include responsive(L){
-    .cardGallery .card-img-top{
-        height: 122px !important;
-    }
-    .cardGallery img{
-        height: 25vh !important;
-    }
-}
-
-
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@include responsive(M){
-    /* --- cardActivity --- */
-    .cardActivity{
-        height: 60vh !important;
-    }
-    .cardActivity.is-expanded .cardActivity__expander{
-        max-height: 70vh !important;
-        min-height: 55vh !important;
-    }
-
-    /* --- cardEvent --- */
-    .cardEvent {
-        .card-img-top{
-            height: 38vh !important;
-        }
-
-        img{
-            height: 38vh !important;
-        }
-
-        .date-event{
-            height: 38vh !important;
-        }
-
-        .annee{
-            font-size: small !important;
-        }
-    }
-
-    /* --- cardGallery ---  */
-    .cardGallery {
-        .card-img-top{
-            height: 34vh !important;
-        }
-
-        img{
-            height: 43vh !important;
-        }
-    }
-
-}
-
-
-
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(S){
-    /* --- cardActivity --- */
-    .cardActivity.is-expanded .cardActivity__expander{
-        padding-top: 11% !important;
-        display: -webkit-box !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
-        -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
-    }
-    .cardActivity-txt{
-        text-align: justify !important;
-        -webkit-box-flex: 0 !important;
-        -ms-flex: 0 0 100% !important;
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-    }
-    .cardActivity-info{
-        -webkit-box-flex: 0 !important;
-        -ms-flex: 0 0 50% !important;
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
-    }
-}
-
-
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(XS){
-
 }

@@ -1,0 +1,34 @@
+// main: ../style.scss
+
+/* ---------------------------------------------- */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+    /* ---------------   general   --------------- */
+    /* ---------------   general   --------------- */
+    #section-activity .bg-paw-left,
+    #section-gallery .bg-paw-left,
+    #section-event .bg-paw-right,
+    #section-newsletter .bg-silhouette{
+        background: inherit !important;
+    }
+    /* --------------   SECTION-SLIDE   -------------- */
+    #section-slide{
+        padding-top: 16% !important;
+    }
+    #section-slide .justify-content-center{
+        padding: 0 6% !important;
+    }
+    .accroche {
+        font-size: 25px !important;
+    }
+    #section-slide .btn{
+        width: 100%;
+        font-size: large;
+    }
+    /* -----------   SECTION-NEWSLETTER   ----------- */
+    .text-line-2 {
+        font-size: 26px !important;
+    }
+}

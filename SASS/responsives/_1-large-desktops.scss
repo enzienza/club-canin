@@ -1,0 +1,154 @@
+// main: ../style.scss
+
+/* ---------------------------------------------- */
+/* --- Large devices (desktops, 992px and up) --- */
+/* ---------------------------------------------- */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* -----------------   GENERAL   ----------------- */
+    .btn{
+        margin: 3% 0;
+    }
+
+    /* ----------- NAV-PRINCIPAL ------------ */
+    .navbar-expand-lg .navbar-collapse{
+        width: 100%;
+    }
+
+    /* --------------   SECTION-SLIDE   -------------- */
+    /* box-left */
+    #section-slide{
+        //padding-top: 6% !important;
+        //height: 90vh !important;
+    }
+    #section-slide .justify-content-center{
+        padding: 11% 10% !important;
+    }
+    #section-slide .box-left, .box-right{
+        height: 70vh !important;
+    }
+    #section-slide .intro {
+        padding: 15% 0 13%;
+        font-size: 20px;
+    }
+    #section-slide .accroche{
+        font-size: 26px;
+        padding-bottom: 8%;
+    }
+    #section-slide .btn{
+        width: 100%;
+    }
+
+    /* -------------   SECTION-ACTIVITY   ------------ */
+    #section-activity{
+        height: 90vh !important;
+    }
+    #section-activity .bg-paw-left{
+        padding-top: 6% !important;
+        height: 63vh;
+    }
+    #section-activity .titre{
+        font-size: 30px;
+        margin-top: 3%;
+        margin-bottom: 0;
+    }
+    #section-activity .cardActivity-title{
+        font-size:large;
+    }
+    #section-activity .activiy-title {
+        padding-bottom: 0%;
+        text-align: justify;
+    }
+
+    /* --------------   SECTION-EVENT   ------------- */
+    #section-event{
+        height: 110vh !important;
+    }
+    #section-event .bg-paw-right{
+        padding-top: 8% !important;
+        height: 73vh;
+    }
+    #section-event .titre{
+        font-size: 37px;
+        text-align: center;
+    }
+    #section-event .date-event, #archive-event .date-event{
+        height: 26vh;
+        width: 22%;
+    }
+    #section-event img, #archive-event img{
+        height: 26vh;
+        width: 100%;
+    }
+    #section-event .annee, #archive-event .annee{
+        font-size: small;
+    }
+    #section-event .btn{
+        margin: 3% 0;
+    }
+    /* -------------   SECTION-GALLERY   ------------- */
+    #section-gallery {
+        height: 85vh !important;
+    }
+    #section-gallery .bg-paw-left{
+        margin-top: 1% !important;
+        height: 66vh !important;
+    }
+    #section-gallery .titre{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 4%;
+    }
+    .cardGallery .card-img-top{
+        height: 122px !important;
+    }
+    .cardGallery img{
+        height: 25vh !important;
+    }
+    #section-gallery .btn{
+        margin: 5% 0;
+    }
+    /* ---------------   ARCHIVE   ------------- */
+    #archive-event{
+        padding-top: 14% !important;
+    }
+    #archive-event .titre{
+        margin-bottom: 0;
+    }
+    /* --------------   SINGLE  ------------- */
+    #single-gallery .gallery{
+        margin-right: -15px;
+        margin-left: -15px;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    #single-gallery .gallery-item{
+        max-width: 33.333333%;
+        margin: 10px 0;
+        -webkit-flex: 0 0 33.333333%;
+        -moz-flex: 0 0 33.333333%;
+        -ms-flex: 0 0 33.333333%;
+        -o-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+    }
+    .card-info-event .list-group-item,
+    .card-info-gallery .list-group-item{
+        margin: 10px 0;
+        padding: 0;
+    }
+    /* -----------   SECTION-NEWSLETTER   ----------- */
+    #section-newsletter{
+        height: 65vh !important;
+    }
+    #section-newsletter .bg-silhouette{
+        height: 65vh !important;
+    }
+    /* -------------   SECTION-CONTACT   -------------*/
+    .footer-left .table{
+        width: 70%;
+    }
+}

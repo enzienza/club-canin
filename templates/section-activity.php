@@ -15,7 +15,7 @@ Version: 2.0
     <div class="container-fluid bg-paw-left">
         <div class="container">
             <div class="row activiy-title justify-content-center">
-                <div class="col-lg-9 col-md-8 col-12">
+                <div class="offset-md-2 col-md-9 col-12">
                     <p class="titre">
                         <strong class="strong-color">Notre club te propose</strong> de venir partager
                         <strong class="strong-color">ses activités</strong> avec ton meilleur ami

@@ -36,6 +36,13 @@ Version: 2.0
 @import 'modules/tables';
 @import 'modules/card-flexbox';
 
+// RESPONSIVES -----------------------------------------------------------------
+@import 'responsives/1-large-desktops';
+@import 'responsives/2-medium-tablets';
+@import 'responsives/3-mobile-layout';
+@import 'responsives/4-small-smartphone';
+@import 'responsives/5-extra-small-smartphone';
+
 // LAYOUT ----------------------------------------------------------------------
 @import 'layout/footer';
 @import 'layout/header';

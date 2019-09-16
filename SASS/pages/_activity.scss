@@ -4,96 +4,40 @@
 /* SECTION-EVENT */
 /*------------------------------------------------------------------------------*/
 #section-activity{
-    height: 100vh;
+    max-height: 100vh;
+    height: 100%;
 
     .bg-paw-left{
         padding-top: 7%;
     }
 
-    img{
-        width: 100%;
-        height: 192px;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        -o-transition: all .3s;
-        -ms-transition: all .3s;
-        transition: all .3s;
+    .activiy-title{
+        padding-bottom: 1%;
+        text-align: justify;
+        padding-top: 1em;
     }
-}
 
-.activiy-title{
-    padding-bottom: 1%;
-    text-align: justify;
-    padding-top: 3%;
+    img{
+        max-width: 100%;
+        width: 100%;
+        max-height: 192px;
+        min-height: 192px;
+        height: 100%;
+
+        @include transition-card(all .3s);
+    }
+
+    .cardActivity-title{
+        padding: 5% 0;
+        background: #b47a4b;
+        font-size: 1em;
+    }
+
+
 }
 
 .btn-center .btn{
     font-size: x-large;
     letter-spacing: 2px;
     width: 50%;
-}
-
-
-
-/*------------------------------------------------------------------------------*/
-/* LARGE */
-/*------------------------------------------------------------------------------*/
-@include responsive(L) {
-    #section-activity{
-        height: 90vh !important;
-
-        .bg-paw-left{
-            padding-top: 6% !important;
-            height: 63vh;
-        }
-
-        .titre{
-            font-size: 30px;
-            margin-top: 3%;
-            margin-bottom: 0;
-        }
-
-        .cardActivity-title{
-            font-size:large;
-        }
-
-        .activiy-title {
-            padding-bottom: 0%;
-            text-align: justify;
-        }
-    }
-}
-
-/*------------------------------------------------------------------------------*/
-/* MEDIUM */
-/*------------------------------------------------------------------------------*/
-@include responsive(M){
-    #section-activity{
-        height: 190vh !important;
-
-        .bg-paw-left{
-            height: 84vh !important;
-            margin-top: 0 !important;
-        }
-    }
-
-}
-
-
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(S) {
-    #section-activity{
-        height: 305vh !important;
-        margin-top: 0 !important;
-    }
-}
-
-
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(XS) {
-
 }
