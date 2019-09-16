@@ -5,12 +5,16 @@
 /* NEWSLETTER  */
 /*-----------------------------------------------------------------------------*/
 #section-newsletter{
-    height: 48vh;
+    max-height: 57vh;
+    min-height: 57vh;
+    height: 100%;
 
     .bg-silhouette{
         background: URL('img/silhouette-humain.png')no-repeat left,
                     URL('img/silhouette-dog.png')no-repeat right;
-        height: 50vh;
+        max-height: 60vh;
+        min-height: 60vh;
+        height: 100%;
         background-size: 190px;
     }
 
@@ -32,7 +36,8 @@
         &-mail{
             width: 100%;
             padding: 5px;
-            height: 40px;
+            max-height: 40px;
+            min-height: 40px;
             line-height: 40px;
             margin-left: 4%;
         }

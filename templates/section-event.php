@@ -77,7 +77,7 @@ Version: 2.0
             <!-- debut -> bouton -->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-12 btn-center">
-                    <a href="http://localhost:8888/IEPS_2017-2018/projet-canin/evenement/" class="btn btn-outline-primary">
+                    <a href="http://localhost:8888/projet_2019/projet-canin/evenements/" class="btn btn-outline-primary">
                         Tout nos événements
                     </a>
                 </div>

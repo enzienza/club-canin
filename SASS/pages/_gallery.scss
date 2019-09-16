@@ -5,11 +5,15 @@
 /* SECTION-GALLERY */
 /*------------------------------------------------------------------------------*/
 #section-gallery{
-    height: 83vh;
+    max-height: 100vh;
+    height: 100%;
 
     .bg-paw-left{
-        padding-top: 8%;
-        height: 85vh;
+        padding-top: 7%;
+    }
+
+    .btn{
+        margin: 2em 0;
     }
 }
 
@@ -19,13 +23,20 @@
 /*------------------------------------------------------------------------------*/
 #archive-gallery{
     padding-top: 11%;
-
+    padding-bottom: 5em;
+    
     .titre{
         text-align: center;
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
 
      .row{
-        padding-bottom: 3%;
+        //padding-bottom: 3%;
+    }
+
+    .cardGallery{
+        margin-bottom: 3rem;
     }
 }
 

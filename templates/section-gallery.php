@@ -15,7 +15,7 @@ Version: 2.0
     <div class="container-fluid bg-paw-left">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-10 col-md-8 col-12">
+                <div class="offset-2 col-md-10 col-12">
                     <p class="titre">
                         <strong class="strong-color">Moment sympa</strong> que nous avous
                         <strong class="strong-color">partagé</strong>
@@ -46,10 +46,13 @@ Version: 2.0
                         <div class="card-img-top">
                             <?php the_post_thumbnail(); ?>
                         </div>
-                        <div class="card-body">
+                        <div class="">
                             <h1 class="card-title">
                                 <?php the_title(); ?>
                             </h1>
+                        </div>
+                        <div class="card-body">
+
                             <a href="<?php the_permalink(); ?>" class="lien-gallery float-right">
                                 Voir la galerie
                             </a>
@@ -65,12 +68,12 @@ Version: 2.0
             <!-- BOUTON -->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-12 btn-center">
-                    <a href="http://localhost:8888/projet_2019/projet-canin/galerie/" class="btn btn-outline-primary">
+                    <a href="http://localhost:8888/projet_2019/projet-canin/galeries/" class="btn btn-outline-primary">
                         Tout nos bon moment
                     </a>
                 </div>
             </div><!-- /.row .justify-content-center -->
 
         </div><!-- /.container -->
-    </div><!-- /.container-fluid .bg-paw-left -->
+    </div><!-- /.container-fluid bg-paw-left -->
 </section><!-- /#section-gallery .bg-clair -->

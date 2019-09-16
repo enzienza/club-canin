@@ -28,12 +28,23 @@
 #archive-event{
     padding-top: 11%;
 
+    .bg-paw-right{
+        background-attachment: fixed;
+        background-size: cover;
+        max-height: inherit;
+        height: auto;
+    }
+
     .titre{
         text-align: center;
     }
 
     .row{
-        padding-bottom: 3%;
+        //padding-bottom: 3%;
+    }
+
+    .cardEvent{
+        margin-bottom: 3em;
     }
 }
 
