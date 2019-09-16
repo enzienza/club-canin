@@ -13,7 +13,7 @@
 /* Medium devices (tablets, 768px and up) */
 /*------------------------------------------------------------------------------*/
 @mixin medium-device {
-    @media only screen and (max-width: 768px) and (max-width: 991px){
+    @media only screen and (min-width: 768px) and (max-width: 991px){
         @content;
     }
 }
@@ -49,7 +49,7 @@
 /* Extra Small devices  */
 /*------------------------------------------------------------------------------*/
 @mixin xsmall-device {
-    @media only screen and (min-width: 320px) and (max-width : 479px){
+    @media only screen and (min-width: 320px) and (max-width: 479px){
         @content;
     }
 }

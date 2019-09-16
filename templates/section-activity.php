@@ -52,14 +52,14 @@ Version: 2.0
                         </div>
                         <div class="cardActivity__expander">
                             <span class="icons icon-close  [ js-collapser ]"></span>
-                            <div class="col-6 cardActivity-txt">
+                            <div class="col-md-6 col-12 cardActivity-txt">
                                 <?php the_content(); ?>
                             </div>
-                            <div class="col-3 cardActivity-info">
+                            <div class="col-md-3 col-6 cardActivity-info info-left">
                                 <p class="txt-icon"><span class="icons icon-calendar"></span></p>
                                 <p><?php echo get_post_meta($post->ID, 'quand', true); ?></p>
                             </div>
-                            <div class="col-3 cardActivity-info">
+                            <div class="col-md-3 col-6 cardActivity-info info-right">
                                 <p class="txt-icon"><span class="icons icon-clock"></span></p>
                                 <p>
                                     <?php echo get_post_meta($post->ID, 'heure_debut', true); ?> -

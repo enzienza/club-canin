@@ -59,30 +59,61 @@ ul{
 }
 
 /*------------------------------------------------------------------------------*/
-/* MEDIUM */
+/* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
-@include responsive(M){
+
+/* Large devices -------------------------------------------------------------*/
+@include large-device {
 
 }
 
-
-/*------------------------------------------------------------------------------*/
-/* SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(S){
-    /* #section-activity .bg-paw-left,
+/* Medium devices ------------------------------------------------------------*/
+@include medium-device{
+    #section-activity .bg-paw-left,
     #section-gallery .bg-paw-left,
     #section-event .bg-paw-right,
     #section-newsletter .bg-silhouette{
-        background: inherit !important;;
-    } */
+        background: none;
+    }
 }
 
 
-/*------------------------------------------------------------------------------*/
-/* EXTRA SMALL */
-/*------------------------------------------------------------------------------*/
-@include responsive(XS){
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+    #section-activity .bg-paw-left,
+    #section-gallery .bg-paw-left,
+    #section-event .bg-paw-right,
+    #section-newsletter .bg-silhouette{
+        background: none;
+    }
+}
 
+/* Small devices -------------------------------------------------------------*/
+@include small-device {
+    #section-activity .bg-paw-left,
+    #section-gallery .bg-paw-left,
+    #section-event .bg-paw-right,
+    #section-newsletter .bg-silhouette{
+        background: none;
+    }
+}
 
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
+    #section-activity .bg-paw-left,
+    #section-gallery .bg-paw-left,
+    #section-event .bg-paw-right,
+    #section-newsletter .bg-silhouette{
+        background: none;
+    }
+}
+
+/* Extra Small devices -------------------------------------------------------*/
+@include xsmall-device {
+    #section-activity .bg-paw-left,
+    #section-gallery .bg-paw-left,
+    #section-event .bg-paw-right,
+    #section-newsletter .bg-silhouette{
+        background: none;
+    }
 }

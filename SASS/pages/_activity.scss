@@ -104,10 +104,81 @@
 
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
+    #section-activity{
+        min-height: 240vh;
+        max-height: 240vh;
+        height: auto;
 
+        .bg-paw-left{
+            padding-top: 0;
+        }
+
+        .titre{
+            font-size: 1.5em;
+            background-color: inherit;
+        }
+
+        img{
+            min-height: 250px;
+            max-height: 250px;
+        }
+    }
+
+    .cardActivity{
+        margin-bottom: 0;
+
+        .cardActivity__inner{
+            max-width: 250px;
+        }
+    }
 }
 
 /* Extra Small devices -------------------------------------------------------*/
 @include xsmall-device {
+    #section-activity{
+        min-height: 240vh;
+        max-height: 240vh;
+        height: auto;
 
+        .bg-paw-left{
+            padding-top: 0;
+        }
+
+        .titre{
+            font-size: larger;
+            background-color: inherit;
+        }
+
+        img{
+            min-height: 250px;
+            max-height: 250px;
+        }
+    }
+
+    .cardActivity.is-expanded .cardActivity__expander{
+        min-height: 380px;
+        height: auto;
+    }
+
+
+    .cardActivity{
+        margin-bottom: 0;
+
+        .cardActivity__inner{
+            max-width: 250px;
+        }
+
+        .info-left, .info-right{
+            position: absolute;
+            bottom: 0;
+        }
+
+        .info-left{
+            left: 0;
+        }
+
+        .info-right{
+            right: 0;
+        }
+    }
 }

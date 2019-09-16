@@ -195,10 +195,84 @@
     }
 }
 
+/* Mobile Layout -------------------------------------------------------------*/
+@include mobile-layout {
+    // section-slide ---------------------------------------------
+    #section-slide{
+        padding-top: 0;
+        margin-top: 5em;
+        min-height: 70vh;
+        max-height: 70vh;
+        height: auto;
 
+        .box-left, .box-right{
+            min-height: 80vh;
+            max-height: 80vh;
+            height: auto;
+        }
+
+        // box-left --------------------------------
+        .justify-content-center{
+            padding: inherit;
+        }
+
+        .intro{
+            padding: 0;
+            font-size: 1.3em;
+            margin-top: 2em;
+            margin-bottom: 1.5em;
+        }
+
+        .accroche{
+            font-size: 1.5em;
+            padding: 0;
+        }
+
+        //box-right --------------------------------
+        .box-right{
+            display: none;
+        }
+    }
+}
 
 /* Small devices -------------------------------------------------------------*/
 @include small-device{
+    // section-slide ---------------------------------------------
+    #section-slide{
+        padding-top: 0;
+        margin-top: 5em;
+        min-height: 70vh;
+        max-height: 70vh;
+        height: auto;
+
+        .box-left, .box-right{
+            min-height: 75vh;
+            max-height: 75vh;
+            height: auto;
+        }
+
+        // box-left --------------------------------
+        .justify-content-center{
+            padding: inherit;
+        }
+
+        .intro{
+            padding: 12% 0 8%;
+            font-size: 1.5em;
+        }
+
+        .accroche{
+            font-size: 2em;
+        }
+
+        //box-right --------------------------------
+        .box-right{
+            display: none;
+        }
+    }
+
+
+    // section-contact ------------------------------------------
     #section-contact{
         height: 150vh !important;
     }
@@ -207,8 +281,80 @@
     }
 }
 
+/* Wide Mobile Layout --------------------------------------------------------*/
+@include wide-mobile {
+    // section-slide ---------------------------------------------
+    #section-slide{
+        padding-top: 0;
+        margin-top: 5em;
+        min-height: 70vh;
+        max-height: 70vh;
+        height: auto;
+
+        .box-left, .box-right{
+            min-height: 75vh;
+            max-height: 75vh;
+            height: auto;
+        }
+
+        // box-left --------------------------------
+        .justify-content-center{
+            padding: inherit;
+        }
+
+        .intro{
+            padding: 12% 0 8%;
+            font-size: 1.5em;
+        }
+
+        .accroche{
+            font-size: 2em;
+        }
+
+        //box-right --------------------------------
+        .box-right{
+            display: none;
+        }
+    }
+}
 
 /* Extra Small devices -------------------------------------------------------*/
 @include xsmall-device {
+    // section-slide ---------------------------------------------
+    #section-slide{
+        padding-top: 0;
+        margin-top: 6em;
+        min-height: 70vh;
+        max-height: 70vh;
+        height: auto;
 
+        .box-left, .box-right{
+            min-height: 70vh;
+            max-height: 70vh;
+            height: auto;
+            padding-top: 2em;
+        }
+
+        // box-left --------------------------------
+        .justify-content-center{
+            padding: inherit;
+        }
+
+        .intro{
+            padding: 0;
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        .accroche{
+            font-size: 1.6em;
+            padding: 0;
+            margin-bottom: 1.3em;
+        }
+
+        //box-right --------------------------------
+        .box-right{
+            display: none;
+        }
+    }
 }
