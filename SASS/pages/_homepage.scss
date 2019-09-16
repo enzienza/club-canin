@@ -68,7 +68,10 @@
 /* SECTION-CONTACT */
 /*------------------------------------------------------------------------------*/
 #section-contact{
-    height: 90vh;
+    min-height: 90vh;
+    max-height: 90vh;
+    height: 100%;
+
     h1{
         font-size: 2em;
         line-height: 3;
@@ -79,11 +82,16 @@
         padding: 0;
         padding-top: 3%;
     }
+
+    .footer-left, .footer-right{
+        padding-left: 6em;
+    }
 }
 
 
 /* Large devices -------------------------------------------------------------*/
 @include large-device{
+    // SECTION-SLIDE ---------------------------------------
     #section-slide{
         padding-top: 9%;
         max-height: 80vh ;
@@ -104,6 +112,21 @@
         }
         .btn{
             width: 100%;
+        }
+    }
+
+    //SECTION-CONTACT --------------------------------------
+    #section-contact{
+        min-height: 85vh;
+        max-height: 85vh;
+        height: 100%;
+
+        .footer-left, .footer-right{
+            padding-left: 6em;
+        }
+
+        h1{
+            margin-top: 1.2em;
         }
     }
 }
