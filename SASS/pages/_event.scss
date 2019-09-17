@@ -99,6 +99,8 @@
 
 
 /*------------------------------------------------------------------------------*/
+/* RESPONSIVE - MEDIA QUERIES */
+/*------------------------------------------------------------------------------*/
 
 /* Large devices -------------------------------------------------------------*/
 @include large-device {
@@ -152,13 +154,24 @@
         font-size: small;
     }
 
-
     //ARCHIVE-EVENT -------------------------------
     #archive-event{
-        padding-top: 14% !important;
+        margin-top: 0;
+        margin-bottom: 2em;
 
         .titre{
-            margin-bottom: 0;
+            margin-bottom: .9em;
+        }
+    }
+
+    // single-event -------------------------------
+    #single-event{
+        .w-100 img{
+            height: 70vh;
+        }
+
+        .titre{
+            font-size: 2.5em;
         }
     }
 }
@@ -166,7 +179,7 @@
 
 /* Medium devices ------------------------------------------------------------*/
 @include medium-device {
-    /* --- SECTION-EVENT --- */
+    // SECTION-EVENT ----------------------------------------
     #section-event{
         max-height: 120vh;
         min-height: 70vh;
@@ -207,53 +220,88 @@
     }
 
 
-    /* --- ARCHIVE-EVENT --- */
+    // ARCHIVE-EVENT ----------------------------------------
     #archive-event{
-        padding-top: 14% !important;
+        margin-top: 1em;
+        margin-bottom: 3em;
 
         .titre{
-            margin-bottom: 0;
-            font-size: 30px !important;
-            margin-bottom: 3% !important;
-            margin-top: 7% !important;
+            font-size: 2.2em;
+            margin-top: 1em;
+            margin-bottom: 1.5em;
         }
     }
 
-    /* --- SINGLE-EVENT --- */
-    #single-event .event-desc{
-        padding-bottom: 7% !important;
+    // SINGLE-EVENT -----------------------------------------
+    #single-event{
+        .w-100 img{
+            height: 60vh;
+        }
 
         .titre{
-            font-size: 30px !important;
-            margin-bottom: 3% !important;
-            margin-top: 2% !important;
+            font-size: 2.5em;
+            margin-top: .8em;
+            margin-bottom: .5em;
+        }
+
+        .event-desc{
+            margin-bottom: 3em;
+            padding-right: 0;
+            padding-bottom: 0;
         }
     }
 
     .card-info-event{
-        margin-bottom: 11%;
         margin-top: 0;
+        margin-bottom: 2em;
+        @include flexbox;
+        @include align-items(center);
+
+        .card-body{
+            width: 50%;
+        }
 
         .list-group-item{
             margin: 10px 0;
             padding: 0;
         }
     }
-
-
 }
 
 
 /* Mobile Layout -------------------------------------------------------------*/
 @include mobile-layout {
+    // section-event --------------------------------------
+    #section-event{
 
+    }
+
+    // archive-event --------------------------------------
+    #archive-event{
+
+    }
+
+    // single-event ---------------------------------------
+    #single-event{
+
+    }
 }
 
 /* Small devices -------------------------------------------------------------*/
 @include small-device {
-    /* --- SECTION-EVENT --- */
+    // section-event --------------------------------------
     #section-event{
-        //height: 305vh !important;
+
+    }
+
+    // archive-event --------------------------------------
+    #archive-event{
+
+    }
+
+    // single-event ---------------------------------------
+    #single-event{
+
     }
 
 }
@@ -261,6 +309,7 @@
 
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
+    // section-event --------------------------------------
     #section-event{
 
         .titre{
@@ -273,10 +322,21 @@
             font-size: large;
         }
     }
+
+    // archive-event --------------------------------------
+    #archive-event{
+
+    }
+
+    // single-event ---------------------------------------
+    #single-event{
+
+    }
 }
 
 /* Extra Small devices -------------------------------------------------------*/
 @include xsmall-device {
+    // section-event --------------------------------------
     #section-event{
         min-height: 295vh;
         max-height: 295vh;
@@ -295,7 +355,6 @@
             font-size: large;
         }
     }
-
 
     .cardEvent{
         margin-bottom: 2.5em;
@@ -340,4 +399,56 @@
             font-size: smaller;
         }
     }
+
+    // archive-event --------------------------------------
+    #archive-event{
+        margin-top: 5em;
+
+        .titre{
+            font-size: x-large;
+            margin-top: 1em;
+            margin-bottom: 1.3em;
+        }
+    }
+
+    // single-event ---------------------------------------
+    #single-event{
+        margin-top: 2em;
+
+        .w-100 img{
+            height: 50vh;
+        }
+
+        .titre{
+            font-size: xx-large;
+            margin-top: .7em;
+            margin-bottom: .5em;
+        }
+
+        .event-desc{
+            font-size: smaller;
+            padding: .5em;
+        }
+    }
+
+    .card-info-event{
+        margin-top: 1em;
+        margin-bottom: 2em;
+        @include flexbox;
+        @include align-items(center);
+
+        .card-body{
+            width: 95%;
+        }
+
+        .card-title{
+            font-size: large;
+        }
+
+        .list-group-item{
+            font-size: smaller;
+            margin: 5px 0;
+        }
+    }
+
 }

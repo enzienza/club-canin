@@ -30,7 +30,7 @@
                 if($my_query->have_posts()) : while($my_query->have_posts()) : $my_query->the_post();
              ?>
             <!-- debut : item cardGallery -->
-            <div class="col-lg-3 col-md-6 col-12 item-gallery">
+            <div class="col-lg-4 col-md-6 col-12 item-gallery">
                 <div class="card cardGallery">
                     <!-- <img src="asset/img/gallery-360459.jpg" alt="Souvenir xx" class="card-img-top"> -->
                     <div class="card-img-top">

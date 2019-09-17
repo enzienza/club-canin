@@ -17,12 +17,12 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-12 col-12">
+                <div class="col-lg-8 col-12">
                     <h1 class="titre"><?php the_title(); ?></h1>
                     <div class="event-desc"><?php the_content(); ?></div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-12">
                     <div class="card card-info-event">
                         <div class="card-body">
                             <h5 class="card-title">L'évènement ce tiendra</h5>

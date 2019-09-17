@@ -78,15 +78,14 @@
 /* Medium devices ------------------------------------------------------------*/
 @include medium-device {
     #section-newsletter{
-        min-height: 30vh;
-        max-height: 30vh;
+        min-height: 40vh;
+        max-height: 40vh;
         height: 100%;
 
         .bg-silhouette{
-            min-height: 30vh;
-            max-height: 30vh;
-            height: 100%;
+            background: none;
         }
+
         .text{
             &-line-1{
                 font-size: 1.4em;
