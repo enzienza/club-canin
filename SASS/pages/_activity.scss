@@ -105,8 +105,8 @@
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
     #section-activity{
-        min-height: 240vh;
-        max-height: 240vh;
+        min-height: 215vh;
+        max-height: 215vh;
         height: auto;
 
         .bg-paw-left{
@@ -143,7 +143,7 @@
     }
 
     .cardActivity.is-expanded .cardActivity__expander{
-        min-height: 355px;
+        min-height: 340px;
         height: auto;
     }
 

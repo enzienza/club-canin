@@ -245,14 +245,14 @@
     // section-slide ---------------------------------------------
     #section-slide{
         padding-top: 0;
-        margin-top: 5em;
-        min-height: 70vh;
-        max-height: 70vh;
+        margin-top: 3em;
+        min-height: 90vh;
+        max-height: 90vh;
         height: auto;
 
         .box-left, .box-right{
-            min-height: 75vh;
-            max-height: 75vh;
+            min-height: 90vh;
+            max-height: 90vh;
             height: auto;
         }
 
@@ -262,12 +262,14 @@
         }
 
         .intro{
-            padding: 12% 0 8%;
-            font-size: 1.5em;
+            margin-top: 5em;
+            margin-bottom: 0;
+            font-size: large;
+            padding: 0 1.5em;
         }
 
         .accroche{
-            font-size: 2em;
+            font-size: x-large;
         }
 
         //box-right --------------------------------
@@ -291,14 +293,14 @@
     // section-slide ---------------------------------------------
     #section-slide{
         padding-top: 0;
-        margin-top: 5em;
-        min-height: 67vh;
-        max-height: 67vh;
+        margin-top: 2em;
+        min-height: 52vh;
+        max-height: 52vh;
         height: auto;
 
         .box-left, .box-right{
-            min-height: 65vh;
-            max-height: 65vh;
+            min-height: 50vh;
+            max-height: 50vh;
             height: auto;
         }
 
@@ -308,12 +310,13 @@
         }
 
         .intro{
-            padding: 12% 0 8%;
-            font-size: 1.5em;
+            padding: 1em 0;
+            font-size: larger;
         }
 
         .accroche{
-            font-size: 2em;
+            font-size: x-large;
+            letter-spacing: 4px;
         }
 
         //box-right --------------------------------
@@ -324,27 +327,27 @@
 
     // section-contact -------------------------------------------
     #section-contact{
-        #section-contact{
-            min-height: 90vh;
-            max-height: 90vh;
+        min-height: 80vh;
+        max-height: 80vh;
 
-            .map{
-                padding-top: 1.5em;
-            }
-
-            .footer-left, .footer-right{
-                padding-left: 6em;
-            }
-
-            h1{
-                font-size: x-large;
-                line-height: 2.5;
-            }
-
-            .table-location, .table-horaire{
-                font-size: smaller;
-            }
+        .map{
+            padding-top: 1.5em;
         }
+
+        .footer-left, .footer-right{
+            padding-left: 6em;
+        }
+
+        h1{
+            font-size: x-large;
+            line-height: 2.5;
+            margin-top: 1em;
+        }
+
+        .table-location, .table-horaire{
+            font-size: smaller;
+        }
+
     }
 }
 

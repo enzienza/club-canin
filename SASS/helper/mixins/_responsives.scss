@@ -31,7 +31,7 @@
 /* Small devices (landscape phones, 576px and up) */
 /*------------------------------------------------------------------------------*/
 @mixin small-device {
-    @media only screen and (max-width: 568px){
+    @media only screen and (max-width: 576px){
         @content;
     }
 }
