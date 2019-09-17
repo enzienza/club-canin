@@ -287,6 +287,32 @@
     }
 }
 
+/* Mobile Layout -------------------------------------------------------------*/
+@include medium-small{
+    // section-event --------------------------------------
+    #section-event{
+        min-height: 620vh !important;
+        max-height: 620vh !important;
+        height: 100% !important;
+    }
+
+    // archive-event --------------------------------------
+    #archive-event{
+
+    }
+
+    // single-event ---------------------------------------
+    #single-event{
+        .w-100 img{
+            height: 80vh !important;
+        }
+    }
+
+    .card-info-event .card-body{
+        width: 65% !important;
+    }
+};
+
 /* Small devices -------------------------------------------------------------*/
 @include small-device {
     // section-event --------------------------------------
@@ -304,7 +330,6 @@
 
     }
 }
-
 
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
@@ -402,8 +427,6 @@
             margin: 5px 0;
         }
     }
-
-
 }
 
 /* Extra Small devices -------------------------------------------------------*/
@@ -522,5 +545,4 @@
             margin: 5px 0;
         }
     }
-
 }

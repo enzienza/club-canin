@@ -87,18 +87,8 @@ nav, a, img, li {
     }
 }
 
-/* Mobile Layout -------------------------------------------------------------*/
-@include mobile-layout {
-    .navbar li{
-        font-size: .9em;
-        width: 100%;
-        text-align: center;
-        line-height: 3;
-    }
-}
-
-/* Small devices -------------------------------------------------------------*/
-@include small-device {
+/* medium-small -------------------------------------------------------------*/
+@include medium-small {
     .navbar li{
         font-size: .9em;
         width: 100%;

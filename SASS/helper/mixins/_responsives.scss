@@ -18,11 +18,18 @@
     }
 }
 
+
+@mixin medium-small {
+    @media only screen and (min-width: 481px) and (max-width: 767px){
+        @content;
+    }
+}
+
 /*------------------------------------------------------------------------------*/
 /* Mobile Layout: 767px */
 /*------------------------------------------------------------------------------*/
 @mixin mobile-layout {
-    @media only screen and (max-width: 767px){
+    @media only screen and (min-width: 577) and (max-width: 767px){
         @content;
     }
 }
@@ -31,7 +38,7 @@
 /* Small devices (landscape phones, 576px and up) */
 /*------------------------------------------------------------------------------*/
 @mixin small-device {
-    @media only screen and (max-width: 576px){
+    @media only screen and (min-width: 481px) and (max-width: 576px){
         @content;
     }
 }

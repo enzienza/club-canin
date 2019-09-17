@@ -82,8 +82,7 @@ ul{
 @include mobile-layout {
     #section-activity .bg-paw-left,
     #section-gallery .bg-paw-left,
-    #section-event .bg-paw-right,
-    #section-newsletter .bg-silhouette{
+    #section-event .bg-paw-right{
         background: none;
     }
 }
@@ -92,8 +91,7 @@ ul{
 @include small-device {
     #section-activity .bg-paw-left,
     #section-gallery .bg-paw-left,
-    #section-event .bg-paw-right,
-    #section-newsletter .bg-silhouette{
+    #section-event .bg-paw-right{
         background: none;
     }
 }

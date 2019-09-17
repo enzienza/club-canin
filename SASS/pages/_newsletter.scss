@@ -52,9 +52,6 @@
     }
 }
 
-
-
-
 /*------------------------------------------------------------------------------*/
 /* RESPONSIVE - MEDIA QUERIES */
 /*------------------------------------------------------------------------------*/
@@ -72,7 +69,6 @@
             height: 100%;
         }
     }
-
 }
 
 /* Medium devices ------------------------------------------------------------*/
@@ -108,6 +104,27 @@
 
 }
 
+/* Mobile Layout -------------------------------------------------------------*/
+@include medium-small{
+    #section-newsletter{
+        min-height: 90vh !important;
+        max-height: 90vh !important;
+        height: 100% !important;
+
+        .text{
+            &-line-1{
+                font-size: large !important;
+                margin-top: 1em !important;
+                margin-bottom: 1.5em !important;
+            }
+
+            &-line-2{
+                font-size: 1.3em !important;
+                margin-bottom: 1.3em !important;
+            }
+        }
+    }
+}
 
 /* Mobile Layout -------------------------------------------------------------*/
 @include mobile-layout {
@@ -116,31 +133,9 @@
 
 /* Small devices -------------------------------------------------------------*/
 @include small-device {
-    #section-newsletter{
-        min-height: 50vh;
-        max-height: 50vh;
 
-        .bg-silhouette{
-            background: none;
-        }
-
-        .text{
-            &-line-1{
-                font-size: large;
-                margin-bottom: 1.5em;
-            }
-
-            &-line-2{
-                font-size: x-large;
-                margin-bottom: 2em;
-            }
-        }
-
-        .form-bouton{
-            margin-left: 0;
-        }
-    }
 }
+
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
     #section-newsletter{

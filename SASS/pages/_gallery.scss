@@ -267,8 +267,6 @@
     }
 }
 
-
-
 /* Mobile Layout -------------------------------------------------------------*/
 @include mobile-layout {
     // section-gallery --------------------------------------
@@ -284,6 +282,41 @@
     // single-gallery ---------------------------------------
     #single-gallery{
 
+    }
+}
+
+/* Mobile Layout -------------------------------------------------------------*/
+@include medium-small{
+    // section-gallery --------------------------------------
+    #section-gallery{
+        min-height: 500vh !important;
+        max-height: 500vh !important;
+        height: 100% !important;
+    }
+
+    .cardGallery{
+        .card-img-top{
+            img{
+                min-width: 100% !important;
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+        }
+    }
+    // archive-gallery --------------------------------------
+    #archive-gallery{
+
+    }
+
+    // single-gallery ---------------------------------------
+    #single-gallery{
+        .w-100 img{
+            height: 80vh !important;
+        }
+    }
+
+    .card-info-gallery .card-body{
+        width: 80% !important;
     }
 }
 
