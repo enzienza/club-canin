@@ -6175,7 +6175,7 @@ ul {
   #section-gallery .bg-paw-left,
   #section-event .bg-paw-right,
   #section-newsletter .bg-silhouette {
-    background: none;
+    background: none !important;
   }
 }
 
@@ -7452,6 +7452,14 @@ ul {
 /* Small devices -------------------------------------------------------------*/
 /* Wide Mobile Layout --------------------------------------------------------*/
 /* Extra Small devices -------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .map iframe {
+    min-height: 30vh;
+    max-height: 30vh;
+    height: 100%;
+  }
+}
+
 /*-----------------------------------------------------------------------------*/
 /* NEWSLETTER  */
 /*-----------------------------------------------------------------------------*/
@@ -7545,14 +7553,27 @@ ul {
 
 /* Mobile Layout -------------------------------------------------------------*/
 /* Small devices -------------------------------------------------------------*/
-@media only screen and (max-width: 576px) {
+/* Wide Mobile Layout --------------------------------------------------------*/
+/* Extra Small devices -------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
   #section-newsletter {
-    height: 76vh !important;
+    min-height: 60vh;
+    max-height: 60vh;
+  }
+  #section-newsletter .text-line-1 {
+    font-size: large;
+    margin: 0;
+    margin-top: 1em;
+  }
+  #section-newsletter .text-line-2 {
+    font-size: 1.2em;
+    margin: 1.5em 0;
+  }
+  #section-newsletter .form-bouton {
+    margin-left: 0;
   }
 }
 
-/* Wide Mobile Layout --------------------------------------------------------*/
-/* Extra Small devices -------------------------------------------------------*/
 /*-----------------------------------------------------------------------------*/
 /* table */
 /*-----------------------------------------------------------------------------*/
@@ -7890,7 +7911,7 @@ footer {
   .footer-bottom {
     font-size: 0.6rem;
     letter-spacing: 2px;
-    padding: 5%;
+    padding: 1em 5em;
   }
 }
 
@@ -8246,12 +8267,6 @@ nav, a, img, li {
   #section-slide .box-right {
     display: none;
   }
-  #section-contact {
-    height: 150vh !important;
-  }
-  .info h1 {
-    padding: 5% 0 !important;
-  }
 }
 
 /* Wide Mobile Layout --------------------------------------------------------*/
@@ -8313,6 +8328,23 @@ nav, a, img, li {
   }
   #section-slide .box-right {
     display: none;
+  }
+  #section-contact {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  #section-contact .map {
+    padding-top: 1em;
+  }
+  #section-contact .footer-left, #section-contact .footer-right {
+    padding-left: 2.5em;
+  }
+  #section-contact h1 {
+    font-size: larger;
+    line-height: 1.5;
+  }
+  #section-contact .table-location, #section-contact .table-horaire {
+    font-size: smaller;
   }
 }
 
@@ -8516,13 +8548,28 @@ nav, a, img, li {
 /* Small devices -------------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
   /* --- SECTION-GALLERY --- */
-  #section-gallery {
-    height: 305vh !important;
-  }
 }
 
 /* Wide Mobile Layout --------------------------------------------------------*/
 /* Extra Small devices -------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #section-gallery {
+    min-height: 295vh;
+    max-height: 295vh;
+    height: 100%;
+  }
+  #section-gallery .bg-paw-left {
+    padding-top: 2em;
+  }
+  #section-gallery .titre {
+    font-size: 1.5em;
+  }
+  #section-gallery .btn {
+    width: 100%;
+    font-size: large;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* SECTION-EVENT */
 /*------------------------------------------------------------------------------*/
@@ -8733,13 +8780,65 @@ nav, a, img, li {
 /* Small devices -------------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
   /* --- SECTION-EVENT --- */
-  #section-event {
-    height: 305vh !important;
-  }
 }
 
 /* Wide Mobile Layout --------------------------------------------------------*/
 /* Extra Small devices -------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #section-event {
+    min-height: 295vh;
+    max-height: 295vh;
+    height: auto;
+  }
+  #section-event .bg-paw-right {
+    padding-top: 2em;
+  }
+  #section-event .titre {
+    font-size: 1.5em;
+  }
+  #section-event .btn {
+    width: 100%;
+    font-size: large;
+  }
+  .cardEvent {
+    margin-bottom: 2.5em;
+  }
+  .cardEvent .date-event {
+    min-height: 165px;
+    max-height: 165px;
+    height: auto;
+    padding-top: 10px;
+  }
+  .cardEvent .mois {
+    line-height: 2;
+  }
+  .cardEvent .jour {
+    font-size: 1.6em;
+    line-height: 1.9;
+  }
+  .cardEvent .annee {
+    line-height: 2;
+    margin: auto 10px;
+  }
+  .cardEvent img {
+    min-width: 100%;
+    max-width: 276px;
+    min-height: 165px;
+    max-height: 165px;
+    height: auto;
+    width: auto;
+  }
+  .cardEvent .card-title {
+    font-size: 1.4em;
+  }
+  .cardEvent .card-text {
+    font-size: small;
+  }
+  .cardEvent .lien-event {
+    font-size: smaller;
+  }
+}
+
 /*------------------------------------------------------------------------------*/
 /* SECTION-ACTIVITY */
 /*------------------------------------------------------------------------------*/
@@ -8862,8 +8961,8 @@ nav, a, img, li {
 /* Extra Small devices -------------------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   #section-activity {
-    min-height: 240vh;
-    max-height: 240vh;
+    min-height: 255vh;
+    max-height: 255vh;
     height: auto;
   }
   #section-activity .bg-paw-left {
@@ -8874,8 +8973,8 @@ nav, a, img, li {
     background-color: inherit;
   }
   #section-activity img {
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 230px;
+    max-height: 230px;
   }
   .cardActivity.is-expanded .cardActivity__expander {
     min-height: 380px;
@@ -8885,7 +8984,7 @@ nav, a, img, li {
     margin-bottom: 0;
   }
   .cardActivity .cardActivity__inner {
-    max-width: 250px;
+    max-width: 240px;
   }
   .cardActivity .info-left, .cardActivity .info-right {
     position: absolute;

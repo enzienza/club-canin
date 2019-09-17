@@ -274,10 +274,10 @@
 
     // section-contact ------------------------------------------
     #section-contact{
-        height: 150vh !important;
+        //height: 150vh !important;
     }
     .info h1{
-        padding: 5% 0 !important;
+        //padding: 5% 0 !important;
     }
 }
 
@@ -355,6 +355,29 @@
         //box-right --------------------------------
         .box-right{
             display: none;
+        }
+    }
+
+    // section-contact -------------------------------------------
+    #section-contact{
+        min-height: 100vh;
+        max-height: 100vh;
+
+        .map{
+            padding-top: 1em;
+        }
+
+        .footer-left, .footer-right{
+            padding-left: 2.5em;
+        }
+
+        h1{
+            font-size: larger;
+            line-height: 1.5;
+        }
+
+        .table-location, .table-horaire{
+            font-size: smaller;
         }
     }
 }

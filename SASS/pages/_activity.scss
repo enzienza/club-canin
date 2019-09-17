@@ -136,8 +136,8 @@
 /* Extra Small devices -------------------------------------------------------*/
 @include xsmall-device {
     #section-activity{
-        min-height: 240vh;
-        max-height: 240vh;
+        min-height: 255vh;
+        max-height: 255vh;
         height: auto;
 
         .bg-paw-left{
@@ -150,8 +150,8 @@
         }
 
         img{
-            min-height: 250px;
-            max-height: 250px;
+            min-height: 230px;
+            max-height: 230px;
         }
     }
 
@@ -165,7 +165,7 @@
         margin-bottom: 0;
 
         .cardActivity__inner{
-            max-width: 250px;
+            max-width: 240px;
         }
 
         .info-left, .info-right{

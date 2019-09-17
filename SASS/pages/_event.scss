@@ -253,7 +253,7 @@
 @include small-device {
     /* --- SECTION-EVENT --- */
     #section-event{
-        height: 305vh !important;
+        //height: 305vh !important;
     }
 
 }
@@ -266,5 +266,67 @@
 
 /* Extra Small devices -------------------------------------------------------*/
 @include xsmall-device {
+    #section-event{
+        min-height: 295vh;
+        max-height: 295vh;
+        height: auto;
 
+        .bg-paw-right{
+            padding-top: 2em;
+        }
+
+        .titre{
+            font-size:1.5em;
+        }
+
+        .btn{
+            width: 100%;
+            font-size: large;
+        }
+    }
+
+
+    .cardEvent{
+        margin-bottom: 2.5em;
+
+        .date-event{
+            min-height: 165px;
+            max-height: 165px;
+            height: auto;
+            padding-top: 10px;
+        }
+
+        .mois{
+            line-height: 2;
+        }
+
+        .jour{
+            font-size: 1.6em;
+            line-height: 1.9;
+        }
+
+        .annee{
+            line-height: 2;
+            margin: auto 10px;
+        }
+
+        img{
+            min-width: 100%;
+            max-width: 276px;
+            min-height: 165px;
+            max-height: 165px;
+            height: auto;
+            width: auto;
+        }
+
+        .card-title{
+            font-size: 1.4em;
+        }
+        .card-text{
+            font-size: small;
+        }
+        .lien-event{
+            font-size: smaller;
+        }
+    }
 }

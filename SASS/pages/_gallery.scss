@@ -233,7 +233,7 @@
 @include small-device {
     /* --- SECTION-GALLERY --- */
     #section-gallery{
-        height: 305vh !important;
+        //height: 305vh !important;
     }
 }
 
@@ -244,5 +244,22 @@
 
 /* Extra Small devices -------------------------------------------------------*/
 @include xsmall-device {
+    #section-gallery{
+        min-height: 295vh;
+        max-height: 295vh;
+        height: 100%;
 
+        .bg-paw-left{
+            padding-top: 2em;
+        }
+
+        .titre{
+            font-size: 1.5em;
+        }
+
+        .btn{
+            width: 100%;
+            font-size: large;
+        }
+    }
 }

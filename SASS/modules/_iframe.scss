@@ -50,5 +50,11 @@
 
 /* Extra Small devices -------------------------------------------------------*/
 @include xsmall-device {
-
+    .map{
+        iframe{
+            min-height: 30vh;
+            max-height: 30vh;
+            height: 100%;
+        }
+    }    
 }
