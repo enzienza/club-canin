@@ -128,7 +128,43 @@
         margin-bottom: 0;
 
         .cardActivity__inner{
-            max-width: 250px;
+            min-height: 325px;
+            max-height: 325px;
+        }
+
+        img{
+            min-height: 380px;
+            max-height: 380px;
+            height: 10%;
+            min-width: 255px;
+            max-width: 255px;
+            width: 10%;
+        }
+    }
+
+    .cardActivity.is-expanded .cardActivity__expander{
+        min-height: 355px;
+        height: auto;
+    }
+
+    .cardActivity{
+        margin-bottom: 0;
+
+        /* .cardActivity__inner{
+            max-width: 240px;
+        } */
+
+        .info-left, .info-right{
+            position: absolute;
+            bottom: 0;
+        }
+
+        .info-left{
+            left: 0;
+        }
+
+        .info-right{
+            right: 0;
         }
     }
 }

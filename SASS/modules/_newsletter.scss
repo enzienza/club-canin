@@ -118,12 +118,56 @@
 /* Small devices -------------------------------------------------------------*/
 @include small-device {
     #section-newsletter{
-        //height: 76vh !important;
+        min-height: 50vh;
+        max-height: 50vh;
+
+        .bg-silhouette{
+            background: none;
+        }
+
+        .text{
+            &-line-1{
+                font-size: large;
+                margin-bottom: 1.5em;
+            }
+
+            &-line-2{
+                font-size: x-large;
+                margin-bottom: 2em;
+            }
+        }
+
+        .form-bouton{
+            margin-left: 0;
+        }
     }
 }
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
+    #section-newsletter{
+        min-height: 50vh;
+        max-height: 50vh;
 
+        .bg-silhouette{
+            background: none;
+        }
+
+        .text{
+            &-line-1{
+                font-size: large;
+                margin-bottom: 1.5em;
+            }
+
+            &-line-2{
+                font-size: x-large;
+                margin-bottom: 2em;
+            }
+        }
+
+        .form-bouton{
+            margin-left: 0;
+        }
+    }
 }
 
 /* Extra Small devices -------------------------------------------------------*/
@@ -131,6 +175,11 @@
     #section-newsletter{
         min-height: 60vh;
         max-height: 60vh;
+
+        .bg-silhouette{
+            background: none;
+        }
+
 
         .text{
             &-line-1{

@@ -45,7 +45,13 @@
 
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
-
+    .map{
+        iframe{
+            min-height: 30vh;
+            max-height: 30vh;
+            height: 100%;
+        }
+    }
 }
 
 /* Extra Small devices -------------------------------------------------------*/
@@ -56,5 +62,5 @@
             max-height: 30vh;
             height: 100%;
         }
-    }    
+    }
 }

@@ -233,6 +233,11 @@
             display: none;
         }
     }
+
+    //section-contact --------------------------------------------
+    #section-contact{
+
+    }
 }
 
 /* Small devices -------------------------------------------------------------*/
@@ -287,13 +292,13 @@
     #section-slide{
         padding-top: 0;
         margin-top: 5em;
-        min-height: 70vh;
-        max-height: 70vh;
+        min-height: 67vh;
+        max-height: 67vh;
         height: auto;
 
         .box-left, .box-right{
-            min-height: 75vh;
-            max-height: 75vh;
+            min-height: 65vh;
+            max-height: 65vh;
             height: auto;
         }
 
@@ -314,6 +319,31 @@
         //box-right --------------------------------
         .box-right{
             display: none;
+        }
+    }
+
+    // section-contact -------------------------------------------
+    #section-contact{
+        #section-contact{
+            min-height: 90vh;
+            max-height: 90vh;
+
+            .map{
+                padding-top: 1.5em;
+            }
+
+            .footer-left, .footer-right{
+                padding-left: 6em;
+            }
+
+            h1{
+                font-size: x-large;
+                line-height: 2.5;
+            }
+
+            .table-location, .table-horaire{
+                font-size: smaller;
+            }
         }
     }
 }
@@ -364,7 +394,7 @@
         max-height: 100vh;
 
         .map{
-            padding-top: 1em;
+            padding-top: 1.5em;
         }
 
         .footer-left, .footer-right{

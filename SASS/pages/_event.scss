@@ -261,7 +261,18 @@
 
 /* Wide Mobile Layout --------------------------------------------------------*/
 @include wide-mobile {
+    #section-event{
 
+        .titre{
+            font-size: x-large;
+            margin-bottom: 1.5em;
+        }
+
+        .btn{
+            width: 100%;
+            font-size: large;
+        }
+    }
 }
 
 /* Extra Small devices -------------------------------------------------------*/
