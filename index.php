@@ -16,7 +16,7 @@
     <?php require get_template_directory() . '/templates/section-gallery.php' ?>
 
     <!-- section : newsletter -->
-    <?php require get_template_directory() . '/templates/section-newsletter.php' ?>
+    <?php //require get_template_directory() . '/templates/section-newsletter.php' ?>
 
     <!-- section : contact -->
     <?php require get_template_directory() . '/templates/section-contact.php' ?>
